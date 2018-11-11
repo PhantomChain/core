@@ -36,6 +36,10 @@ exports.show = {
   async handler (request, h) {
     const transaction = await database.transactions.findByTypeAndId(TRANSACTION_TYPES.VOTE, request.params.id)
 
+    if (!transaction) {
+      return Boom.notFound('Vote not found')
+    }
+
     return utils.respondWithResource(request, transaction, 'transaction')
   },
   options: {
