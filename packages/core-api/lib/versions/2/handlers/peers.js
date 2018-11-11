@@ -1,5 +1,6 @@
 'use strict'
 
+const Boom = require('boom')
 const blockchain = require('@phantomcore/core-container').resolvePlugin('blockchain')
 const utils = require('../utils')
 const schema = require('../schema/peers')
@@ -16,7 +17,7 @@ exports.index = {
   async handler (request, h) {
     const allPeers = await blockchain.p2p.getPeers()
 
-    let result = allPeers.sort(() => 0.5 - Math.random())
+    let result = allPeers.sort((a, b) => a.delay - b.delay)
     result = request.query.os ? result.filter(peer => peer.os === request.query.os) : result
     result = request.query.status ? result.filter(peer => peer.status === request.query.status) : result
     result = request.query.port ? result.filter(peer => peer.port === request.query.port) : result
@@ -51,8 +52,13 @@ exports.show = {
    */
   async handler (request, h) {
     const peers = await blockchain.p2p.getPeers()
+    const peer = peers.find(p => p.ip === request.params.ip)
 
-    return utils.respondWithResource(request, peers.find(p => p.ip === request.params.ip), 'peer')
+    if (!peer) {
+      return Boom.notFound('Peer not found')
+    }
+
+    return utils.respondWithResource(request, peer, 'peer')
   },
   options: {
     validate: schema.show

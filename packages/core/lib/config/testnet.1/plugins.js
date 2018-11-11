@@ -54,7 +54,7 @@ module.exports = {
     whitelist: ['127.0.0.1', '::ffff:127.0.0.1', '192.168.*']
   },
   '@phantomcore/core-blockchain': {
-    fastRebuild: true
+    fastRebuild: false
   },
   '@phantomcore/core-api': {
     enabled: !process.env.PHANTOM_API_DISABLED,
