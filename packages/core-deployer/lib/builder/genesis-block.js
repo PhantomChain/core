@@ -3,6 +3,7 @@ const bignum = require('bigi')
 const bip39 = require('bip39')
 const ByteBuffer = require('bytebuffer')
 const crypto = require('crypto')
+const XLSX = require('xlsx')
 
 module.exports = class GenesisBlockBuilder {
   /**
@@ -26,10 +27,33 @@ module.exports = class GenesisBlockBuilder {
     const genesisWallet = this.__createWallet()
     const premineWallet = this.__createWallet()
     const delegates = this.__buildDelegates()
+
+    const workbook = XLSX.readFile('data/init.xlsx')
+    const sheets = workbook.SheetNames
+    const items = XLSX.utils.sheet_to_json(workbook.Sheets[sheets[0]])
+    let totalPremine = 0
+    items.map(function(item, idx) {
+      if(parseFloat(item['phantombalance'])) {
+        totalPremine += parseFloat(item['phantombalance'])
+      }
+    })
     const transactions = [
-      ...this.__buildDelegateTransactions(delegates),
-      this.__createTransferTransaction(premineWallet, genesisWallet, this.totalPremine)
+      //...this.__buildDelegateTransactions(delegates),
+      this.__createTransferTransaction(premineWallet, genesisWallet, totalPremine)
     ]
+    const that = this;
+    items.map(function(item, idx) {
+      if(parseFloat(item['phantombalance'])) {
+        try {
+          const transaction = that.__createTransferTransaction(genesisWallet, {address: item['phantomaddress'].trim()}, parseFloat(item['phantombalance']))
+          transactions.push(transaction)
+        }
+        catch(err) {
+          console.log({address: item['phantomaddress'].trim(), balance: item['phantombalance']})
+        }
+      }
+    })
+
     const genesisBlock = this.__createGenesisBlock({
       keys: genesisWallet.keys,
       transactions,
