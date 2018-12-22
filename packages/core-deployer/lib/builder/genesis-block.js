@@ -32,28 +32,34 @@ module.exports = class GenesisBlockBuilder {
     const sheets = workbook.SheetNames
     const items = XLSX.utils.sheet_to_json(workbook.Sheets[sheets[0]])
     let totalPremine = 0
-    items.map(function(item, idx) {
+    let transactionList = []
+    items.forEach(item => {
       if(parseFloat(item['phantombalance'])) {
-        totalPremine += parseFloat(item['phantombalance'])
+        const transaction = transactionList.find(x => x.phantomaddress.trim() == item['phantomaddress'].trim())
+        if(transaction) {
+          transaction['balance'] += parseFloat(item['phantombalance'])
+        }
+        else {
+          item['balance'] = parseFloat(item['phantombalance'])
+          transactionList.push(item)
+        }
+        totalPremine += this.__getInteger(item['phantombalance'])
       }
     })
     const transactions = [
-      //...this.__buildDelegateTransactions(delegates),
+      ...this.__buildDelegateTransactions(delegates),
       this.__createTransferTransaction(premineWallet, genesisWallet, totalPremine)
     ]
-    const that = this;
-    items.map(function(item, idx) {
-      if(parseFloat(item['phantombalance'])) {
-        try {
-          const transaction = that.__createTransferTransaction(genesisWallet, {address: item['phantomaddress'].trim()}, parseFloat(item['phantombalance']))
-          transactions.push(transaction)
-        }
-        catch(err) {
-          console.log({address: item['phantomaddress'].trim(), balance: item['phantombalance']})
-        }
+    let sum = 0
+    transactionList.forEach(item => {
+      try {
+        const transaction = this.__createTransferTransaction(genesisWallet, {address: item['phantomaddress'].trim()}, this.__getInteger(item['balance']))
+        transactions.push(transaction)
+      }
+      catch(err) {
+        console.log({address: item['phantomaddress'].trim(), balance: item['phantombalance']})
       }
     })
-
     const genesisBlock = this.__createGenesisBlock({
       keys: genesisWallet.keys,
       transactions,
@@ -64,6 +70,21 @@ module.exports = class GenesisBlockBuilder {
       genesisWallet,
       genesisBlock,
       delegatePassphrases: delegates.map(wallet => wallet.passphrase)
+    }
+  }
+
+  /**
+   * Generate an amount from string.
+   * @return number
+   */
+  __getInteger (amount) {
+    const phantomAmount = parseFloat(amount) * 100000000;
+    const amountInteger = parseInt(phantomAmount);
+    if(phantomAmount > amountInteger) {
+      return amountInteger + 1;
+    }
+    else {
+      return amountInteger;
     }
   }
 
