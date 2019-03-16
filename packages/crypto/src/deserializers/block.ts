@@ -44,7 +44,7 @@ class BlockDeserializer {
         block.generatorPublicKey = buf.readBytes(33).toString("hex");
 
         const signatureLength = (): number => {
-            buf.mphantom();
+            buf.mark();
             const lengthHex = buf
                 .skip(1)
                 .readBytes(1)

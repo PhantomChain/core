@@ -26,7 +26,7 @@ class TransactionDeserializer {
     }
 
     private deserializeCommon(transaction: ITransactionData, buf: ByteBuffer): void {
-        buf.skip(1); // Skip 0xFF mphantomer
+        buf.skip(1); // Skip 0xFF marker
         transaction.version = buf.readUint8();
         transaction.network = buf.readUint8();
         transaction.type = buf.readUint8();
@@ -157,7 +157,7 @@ class TransactionDeserializer {
 
     private deserializeSignatures(transaction: ITransactionData, buf: ByteBuffer) {
         const currentSignatureLength = (): number => {
-            buf.mphantom();
+            buf.mark();
             const lengthHex = buf
                 .skip(1)
                 .readBytes(1)
@@ -174,10 +174,10 @@ class TransactionDeserializer {
         }
 
         const beginningMultiSignature = () => {
-            buf.mphantom();
-            const mphantomer = buf.readUint8();
+            buf.mark();
+            const marker = buf.readUint8();
             buf.reset();
-            return mphantomer === 255;
+            return marker === 255;
         };
 
         // Second Signature
