@@ -1,12 +1,14 @@
+const { resolve } = require("path");
+
 module.exports = {
-  './plugin-a': {
-    enabled: true,
-  },
-  './plugin-b': {
-    enabled: true,
-    property: 'value',
-  },
-  './plugin-c': {
-    enabled: true,
-  },
-}
+    [resolve(__dirname, "./plugin-a")]: {
+        enabled: true,
+    },
+    [resolve(__dirname, "./plugin-b")]: {
+        enabled: true,
+        property: "value",
+    },
+    [resolve(__dirname, "./plugin-c")]: {
+        enabled: true,
+    },
+};

@@ -1,6 +1,8 @@
-![PHANTOM Core](https://i.imgur.com/dPHOKrL.jpg))
+# Phantom Core - Tester CLI
 
-# PHANTOM Core - Tester CLI
+<p align="center">
+    <img src="../../banner.png?sanitize=true" />
+</p>
 
 ## Documentation
 
@@ -12,10 +14,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## Credits
 
-- [Brian Faust](https://github.com/faustbrian)
-- [Alex Barnsley](https://github.com/alexbarnsley)
-- [All Contributors](../../../../contributors)
+-   [Brian Faust](https://github.com/faustbrian)
+-   [Alex Barnsley](https://github.com/alexbarnsley)
+-   [All Contributors](../../../../contributors)
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [PhantomChain](https://phantom.org)

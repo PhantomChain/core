@@ -1,48 +1,76 @@
 {
-  "name": "@phantomchain/core-api",
-  "description": "Public API for PHANTOM Core",
-  "version": "0.2.14",
-  "contributors": [
-    "Kristjan Košič <kristjan@ark.io>",
-    "Brian Faust <brian@ark.io>"
-  ],
-  "license": "MIT",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "cross-env PHANTOM_ENV=test jest --runInBand --detectOpenHandles",
-    "test:coverage": "cross-env PHANTOM_ENV=test jest --coverage --coveragePathIgnorePatterns='/(defaults.js|index.js)$' --runInBand --detectOpenHandles",
-    "test:debug": "cross-env PHANTOM_ENV=test node --inspect-brk ../../node_modules/.bin/jest --runInBand",
-    "test:watch": "cross-env PHANTOM_ENV=test jest --runInBand --watch",
-    "test:watch:all": "cross-env PHANTOM_ENV=test jest --runInBand --watchAll",
-    "lint": "eslint ./ --fix"
-  },
-  "dependencies": {
-    "@phantomchain/core-container": "~0.2",
-    "@phantomchain/core-http-utils": "~0.2",
-    "@phantomchain/core-transaction-pool": "~0.2",
-    "@phantomchain/core-utils": "~0.2",
-    "@phantomchain/crypto": "~0.2",
-    "ajv": "^6.5.5",
-    "boom": "^7.3.0",
-    "bs58check": "^2.1.2",
-    "dayjs-ext": "^2.2.0",
-    "hapi-api-version": "^2.1.0",
-    "hapi-pagination": "https://github.com/faustbrian/hapi-pagination",
-    "hapi-rate-limit": "^3.0.0",
-    "ip": "^1.1.5",
-    "joi": "^14.3.0",
-    "lodash": "^4.17.11",
-    "lodash.orderby": "^4.6.0",
-    "lodash.snakecase": "^4.1.1"
-  },
-  "devDependencies": {
-    "@phantomchain/core-test-utils": "~0.2",
-    "axios": "^0.18.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">=10.x"
-  }
+    "name": "@phantomchain/core-api",
+    "description": "Public API for Phantom Core",
+    "version": "2.2.1",
+    "contributors": [
+        "Kristjan Košič <kristjan@phantom.org>",
+        "Brian Faust <brian@phantom.org>"
+    ],
+    "license": "MIT",
+    "main": "dist/index",
+    "types": "dist/index",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "publish:alpha": "npm publish --tag alpha",
+        "publish:beta": "npm publish --tag beta",
+        "publish:rc": "npm publish --tag rc",
+        "publish:latest": "npm publish --tag latest",
+        "prepublishOnly": "yarn build",
+        "pretest": "bash ../../scripts/pre-test.sh",
+        "compile": "../../node_modules/typescript/bin/tsc",
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "clean": "del dist",
+        "docs": "../../node_modules/typedoc/bin/typedoc src --out docs",
+        "lint": "../../node_modules/tslint/bin/tslint -c ../../tslint.json 'src/**/*.ts' '__tests__/**/*.ts' --fix",
+        "test": "cross-env CORE_ENV=test jest --runInBand --forceExit",
+        "test:coverage": "cross-env CORE_ENV=test jest --coverage --coveragePathIgnorePatterns='/(defaults.ts|index.ts)$' --runInBand --forceExit",
+        "test:debug": "cross-env CORE_ENV=test node --inspect-brk ../../node_modules/.bin/jest --runInBand",
+        "test:watch": "cross-env CORE_ENV=test jest --runInBand --watch",
+        "test:watch:all": "cross-env CORE_ENV=test jest --runInBand --watchAll",
+        "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
+    },
+    "dependencies": {
+        "@phantomchain/core-container": "^2.2.1",
+        "@phantomchain/core-http-utils": "^2.2.1",
+        "@phantomchain/core-interfaces": "^2.2.1",
+        "@phantomchain/core-transaction-pool": "^2.2.1",
+        "@phantomchain/core-utils": "^2.2.1",
+        "@phantomchain/crypto": "^2.2.1",
+        "@phantomchain/utils": "^0.2.4",
+        "@faustbrian/hapi-version": "^0.2.11",
+        "ajv": "^6.9.1",
+        "boom": "^7.3.0",
+        "bs58check": "^2.1.2",
+        "dayjs-ext": "^2.2.0",
+        "delay": "^4.1.0",
+        "hapi-pagination": "https://github.com/faustbrian/hapi-pagination",
+        "hapi-rate-limit": "^3.1.1",
+        "ip": "^1.1.5",
+        "joi": "^14.3.1",
+        "lodash.orderby": "^4.6.0",
+        "lodash.partition": "^4.6.0",
+        "lodash.snakecase": "^4.1.1"
+    },
+    "devDependencies": {
+        "@phantomchain/core-test-utils": "^2.2.1",
+        "@types/boom": "^7.2.1",
+        "@types/ip": "^1.1.0",
+        "@types/joi": "^14.3.1",
+        "@types/lodash.orderby": "^4.6.4",
+        "@types/lodash.partition": "^4.6.4",
+        "@types/lodash.snakecase": "^4.1.4",
+        "axios": "^0.18.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "jest": {
+        "preset": "../../jest-preset.json"
+    }
 }

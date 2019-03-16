@@ -1,37 +1,61 @@
 {
-  "name": "@phantomchain/core-logger-winston",
-  "description": "Winston Logger for PHANTOM Core",
-  "version": "0.2.0",
-  "contributors": [
-    "François-Xavier Thoorens <fx@ark.io>",
-    "Brian Faust <brian@ark.io>"
-  ],
-  "license": "MIT",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "cross-env PHANTOM_ENV=test jest --runInBand --detectOpenHandles",
-    "test:coverage": "cross-env PHANTOM_ENV=test jest --coverage --coveragePathIgnorePatterns='/(defaults.js|index.js)$' --runInBand --detectOpenHandles",
-    "test:debug": "cross-env PHANTOM_ENV=test node --inspect-brk ../../node_modules/.bin/jest --runInBand",
-    "test:watch": "cross-env PHANTOM_ENV=test jest --runInBand --watch",
-    "test:watch:all": "cross-env PHANTOM_ENV=test jest --runInBand --watchAll",
-    "lint": "eslint ./ --fix"
-  },
-  "dependencies": {
-    "@phantomchain/core-logger": "~0.2",
-    "chalk": "^2.4.1",
-    "colors": "^1.3.2",
-    "dayjs-ext": "^2.2.0",
-    "node-emoji": "^1.8.1",
-    "winston": "^3.1.0",
-    "winston-daily-rotate-file": "^3.5.1"
-  },
-  "devDependencies": {
-    "capture-console": "^1.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">=10.x"
-  }
+    "name": "@phantomchain/core-logger-winston",
+    "description": "Winston Logger for Phantom Core",
+    "version": "2.2.1",
+    "contributors": [
+        "François-Xavier Thoorens <fx@phantom.org>",
+        "Brian Faust <brian@phantom.org>"
+    ],
+    "license": "MIT",
+    "main": "dist/index",
+    "types": "dist/index",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "publish:alpha": "npm publish --tag alpha",
+        "publish:beta": "npm publish --tag beta",
+        "publish:rc": "npm publish --tag rc",
+        "publish:latest": "npm publish --tag latest",
+        "prepublishOnly": "yarn build",
+        "pretest": "yarn lint && yarn build",
+        "compile": "../../node_modules/typescript/bin/tsc",
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "clean": "del dist",
+        "docs": "../../node_modules/typedoc/bin/typedoc src --out docs",
+        "lint": "../../node_modules/tslint/bin/tslint -c ../../tslint.json 'src/**/*.ts' '__tests__/**/*.ts' --fix",
+        "test": "cross-env CORE_ENV=test jest --runInBand --forceExit",
+        "test:coverage": "cross-env CORE_ENV=test jest --coverage --coveragePathIgnorePatterns='/(defaults.ts|index.ts)$' --runInBand --forceExit",
+        "test:debug": "cross-env CORE_ENV=test node --inspect-brk ../../node_modules/.bin/jest --runInBand",
+        "test:watch": "cross-env CORE_ENV=test jest --runInBand --watch",
+        "test:watch:all": "cross-env CORE_ENV=test jest --runInBand --watchAll",
+        "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
+    },
+    "dependencies": {
+        "@phantomchain/core-interfaces": "^2.2.1",
+        "@phantomchain/core-logger": "^2.2.1",
+        "chalk": "^2.4.2",
+        "colors": "^1.3.3",
+        "dayjs-ext": "^2.2.0",
+        "lodash.isempty": "^4.4.0",
+        "node-emoji": "^1.8.1",
+        "winston": "^3.2.1",
+        "winston-daily-rotate-file": "^3.6.0"
+    },
+    "devDependencies": {
+        "@types/capture-console": "^1.0.0",
+        "@types/lodash.isempty": "^4.4.4",
+        "@types/node-emoji": "^1.8.1",
+        "capture-console": "^1.0.1"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "jest": {
+        "preset": "../../jest-preset.json"
+    }
 }
