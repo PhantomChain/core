@@ -1,7 +1,7 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Database, Logger, P2P } from "@phantomchain/core-interfaces";
-import { TransactionGuard, TransactionPool } from "@phantomchain/core-transaction-pool";
-import { Joi, models, slots } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Database, Logger, P2P } from "@phantomcores/core-interfaces";
+import { TransactionGuard, TransactionPool } from "@phantomcores/core-transaction-pool";
+import { Joi, models, slots } from "@phantomcores/crypto";
 
 import pluralize from "pluralize";
 import { monitor } from "../../../monitor";

@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { EventEmitter } from "@phantomchain/core-interfaces";
-import { SnapshotManager } from "@phantomchain/core-snapshots";
+import { app } from "@phantomcores/core-container";
+import { EventEmitter } from "@phantomcores/core-interfaces";
+import { SnapshotManager } from "@phantomcores/core-snapshots";
 import { flags } from "@oclif/command";
 import _cliProgress from "cli-progress";
 import { setUpLite } from "../utils";

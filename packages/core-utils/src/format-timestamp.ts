@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import dayjs from "dayjs-ext";
 
 /**

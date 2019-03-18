@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Database, TransactionPool } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Database, TransactionPool } from "@phantomcores/core-interfaces";
 
 export abstract class Repository {
     public databaseService = app.resolvePlugin<Database.IDatabaseService>("database");

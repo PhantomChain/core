@@ -1,4 +1,4 @@
-import { networks } from "@phantomchain/crypto";
+import { networks } from "@phantomcores/crypto";
 import Command, { flags } from "@oclif/command";
 import cli from "cli-ux";
 import envPaths from "env-paths";

@@ -5,10 +5,10 @@
  */
 export function transformPlugins(config) {
     const allowed = [
-        "@phantomchain/core-api",
-        "@phantomchain/core-graphql",
-        "@phantomchain/core-json-rpc",
-        "@phantomchain/core-webhooks",
+        "@phantomcores/core-api",
+        "@phantomcores/core-graphql",
+        "@phantomcores/core-json-rpc",
+        "@phantomcores/core-webhooks",
     ];
 
     const result = {};

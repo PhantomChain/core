@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-elasticsearch",
+    "name": "@phantomcores/core-elasticsearch",
     "description": "A powerful Elasticsearch integration for Phantom Core",
     "version": "2.2.1",
     "contributors": [
@@ -26,10 +26,10 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
-        "@phantomchain/core-http-utils": "^2.2.1",
-        "@phantomchain/core-interfaces": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
+        "@phantomcores/core-http-utils": "^2.2.2",
+        "@phantomcores/core-interfaces": "^2.2.2",
+        "@phantomcores/crypto": "^2.2.1",
         "elasticsearch": "^15.4.1",
         "fs-extra": "^7.0.1",
         "joi": "^14.3.1"

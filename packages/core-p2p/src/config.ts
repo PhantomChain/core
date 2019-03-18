@@ -1,3 +1,3 @@
-import { Shared } from "@phantomchain/core-interfaces";
+import { Shared } from "@phantomcores/core-interfaces";
 
 export const config = new Shared.Config();

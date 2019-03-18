@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import "@phantomchain/core-test-utils";
+import { app } from "@phantomcores/core-container";
+import "@phantomcores/core-test-utils";
 import genesisBlock from "../../../../core-test-utils/src/config/testnet/genesisBlock.json";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";

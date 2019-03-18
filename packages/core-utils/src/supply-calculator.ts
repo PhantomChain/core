@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain } from "@phantomchain/core-interfaces";
-import { Bignum, configManager } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain } from "@phantomcores/core-interfaces";
+import { Bignum, configManager } from "@phantomcores/crypto";
 
 /**
  * Calculate the total supply at the given height

@@ -1,7 +1,7 @@
-import "@phantomchain/core-test-utils";
-import { roundCalculator } from "@phantomchain/core-utils";
-import { slots } from "@phantomchain/crypto";
-import { Block } from "@phantomchain/crypto/dist/models";
+import "@phantomcores/core-test-utils";
+import { roundCalculator } from "@phantomcores/core-utils";
+import { slots } from "@phantomcores/crypto";
+import { Block } from "@phantomcores/crypto/dist/models";
 import { asValue } from "awilix";
 import { Blockchain } from "../src/blockchain";
 import { stateStorage } from "../src/state-storage";

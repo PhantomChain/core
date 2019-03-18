@@ -1,6 +1,6 @@
 /* tslint:disable:max-line-length */
 
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 
 import { setUp, tearDown } from "../__support__/setup";
 import { utils } from "../__support__/utils";

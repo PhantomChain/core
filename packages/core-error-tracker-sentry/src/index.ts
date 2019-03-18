@@ -1,4 +1,4 @@
-import { Container } from "@phantomchain/core-interfaces";
+import { Container } from "@phantomcores/core-interfaces";
 import Sentry from "@sentry/node";
 import { defaults } from "./defaults";
 

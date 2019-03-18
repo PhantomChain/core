@@ -1,4 +1,4 @@
-import { supplyCalculator } from "@phantomchain/core-utils";
+import { supplyCalculator } from "@phantomcores/core-utils";
 import Boom from "boom";
 import Hapi from "hapi";
 import { Controller } from "../shared/controller";

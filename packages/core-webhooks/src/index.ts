@@ -1,4 +1,4 @@
-import { Container, Logger } from "@phantomchain/core-interfaces";
+import { Container, Logger } from "@phantomcores/core-interfaces";
 import { database } from "./database";
 import { defaults } from "./defaults";
 import { webhookManager } from "./manager";

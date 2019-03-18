@@ -1,4 +1,4 @@
-import { crypto } from "@phantomchain/crypto";
+import { crypto } from "@phantomcores/crypto";
 import Boom from "boom";
 import Joi from "joi";
 import { database } from "../../services/database";

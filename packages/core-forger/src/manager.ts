@@ -1,7 +1,7 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
-import { NetworkStateStatus } from "@phantomchain/core-p2p";
-import { models, slots } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
+import { NetworkStateStatus } from "@phantomcores/core-p2p";
+import { models, slots } from "@phantomcores/crypto";
 import delay from "delay";
 import isEmpty from "lodash/isEmpty";
 import uniq from "lodash/uniq";

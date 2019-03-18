@@ -1,6 +1,6 @@
-import genesisBlockJson from "@phantomchain/core-test-utils/src/config/testnet/genesisBlock.json";
-import { blocks2to100 as blocks2to100Json } from "@phantomchain/core-test-utils/src/fixtures";
-import { models } from "@phantomchain/crypto";
+import genesisBlockJson from "@phantomcores/core-test-utils/src/config/testnet/genesisBlock.json";
+import { blocks2to100 as blocks2to100Json } from "@phantomcores/core-test-utils/src/fixtures";
+import { models } from "@phantomcores/crypto";
 import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 import { Peer } from "../src/peer";

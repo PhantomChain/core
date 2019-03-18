@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Peer } from "@phantomchain/core-p2p/src/peer";
-import "@phantomchain/core-test-utils";
+import { app } from "@phantomcores/core-container";
+import { Peer } from "@phantomcores/core-p2p/src/peer";
+import "@phantomcores/core-test-utils";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 

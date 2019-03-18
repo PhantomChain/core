@@ -1,4 +1,4 @@
-import { bip38, configManager, crypto } from "@phantomchain/crypto";
+import { bip38, configManager, crypto } from "@phantomcores/crypto";
 import wif from "wif";
 
 export const decryptWIF = (encryptedWif, userId, bip38password) => {

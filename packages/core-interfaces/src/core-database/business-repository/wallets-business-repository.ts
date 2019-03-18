@@ -1,4 +1,4 @@
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 import { IParameters } from "./parameters";
 
 export interface IWalletsBusinessRepository {

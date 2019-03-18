@@ -1,4 +1,4 @@
-import { Database } from "@phantomchain/core-interfaces";
+import { Database } from "@phantomcores/core-interfaces";
 import { Round } from "../models";
 import { queries } from "../queries";
 import { Repository } from "./repository";

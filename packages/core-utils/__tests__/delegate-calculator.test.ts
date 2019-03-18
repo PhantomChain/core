@@ -1,6 +1,6 @@
 import "./__support__/mocks/core-container-calculator";
 
-import { Bignum, models } from "@phantomchain/crypto";
+import { Bignum, models } from "@phantomcores/crypto";
 import "jest-extended";
 import { calculateApproval, calculateProductivity } from "../src/delegate-calculator";
 

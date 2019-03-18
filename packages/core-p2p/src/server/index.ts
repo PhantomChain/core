@@ -1,4 +1,4 @@
-import { createServer, mountServer, plugins } from "@phantomchain/core-http-utils";
+import { createServer, mountServer, plugins } from "@phantomcores/core-http-utils";
 
 /**
  * Create a new hapi.js server.

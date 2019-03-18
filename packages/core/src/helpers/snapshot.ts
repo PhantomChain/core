@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 
 // tslint:disable-next-line:no-var-requires
 const { version } = require("../../package.json");
@@ -8,10 +8,10 @@ export async function setUpLite(options) {
 
     await app.setUp(version, options, {
         include: [
-            "@phantomchain/core-logger",
-            "@phantomchain/core-logger-winston",
-            "@phantomchain/core-event-emitter",
-            "@phantomchain/core-snapshots",
+            "@phantomcores/core-logger",
+            "@phantomcores/core-logger-winston",
+            "@phantomcores/core-event-emitter",
+            "@phantomcores/core-snapshots",
         ],
     });
 

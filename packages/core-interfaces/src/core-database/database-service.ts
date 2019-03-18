@@ -1,4 +1,4 @@
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 import { EventEmitter, Logger } from "../index";
 import { IDelegatesBusinessRepository, IWalletsBusinessRepository } from "./business-repository";
 import { IDatabaseConnection } from "./database-connection";

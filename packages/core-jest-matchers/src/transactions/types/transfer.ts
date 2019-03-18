@@ -1,4 +1,4 @@
-import { constants } from "@phantomchain/crypto";
+import { constants } from "@phantomcores/crypto";
 
 const { Transfer } = constants.TransactionTypes;
 

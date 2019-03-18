@@ -1,5 +1,5 @@
-import { PostgresConnection } from "@phantomchain/core-database-postgres";
-import { Container, Database } from "@phantomchain/core-interfaces";
+import { PostgresConnection } from "@phantomcores/core-database-postgres";
+import { Container, Database } from "@phantomcores/core-interfaces";
 import { defaults } from "./defaults";
 import { SnapshotManager } from "./manager";
 

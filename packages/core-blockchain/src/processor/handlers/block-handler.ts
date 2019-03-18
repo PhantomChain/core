@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
-import { models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
+import { models } from "@phantomcores/crypto";
 import { Blockchain } from "../../blockchain";
 import { BlockProcessorResult } from "../block-processor";
 

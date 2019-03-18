@@ -1,8 +1,8 @@
-import { generators } from "@phantomchain/core-test-utils";
+import { generators } from "@phantomcores/core-test-utils";
 import "jest-extended";
 
-import { NetworkState, NetworkStateStatus } from "@phantomchain/core-p2p";
-import { Bignum, models } from "@phantomchain/crypto";
+import { NetworkState, NetworkStateStatus } from "@phantomcores/core-p2p";
+import { Bignum, models } from "@phantomcores/crypto";
 import { testnet } from "../../crypto/src/networks";
 import { defaults } from "../src/defaults";
 import { ForgerManager } from "../src/manager";

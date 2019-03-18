@@ -1,14 +1,14 @@
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 import genesisBlock from "../../../../core-test-utils/src/config/testnet/genesisBlock.json";
 import { blocks2to100 } from "../../../../core-test-utils/src/fixtures";
 import { resetBlockchain } from "../../../../core-test-utils/src/helpers";
 
-import { app } from "@phantomchain/core-container";
-import { Database } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Database } from "@phantomcores/core-interfaces";
 
 const container = app;
 const { Block } = models;

@@ -1,4 +1,4 @@
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 import { Peer } from "../src/peer";
@@ -17,7 +17,7 @@ beforeAll(async () => {
 
     // Create the genesis block after the setup has finished or else it uses a potentially
     // wrong network config.
-    genesisBlock = new Block(require("@phantomchain/core-test-utils/src/config/testnet/genesisBlock.json"));
+    genesisBlock = new Block(require("@phantomcores/core-test-utils/src/config/testnet/genesisBlock.json"));
     genesisTransaction = new Transaction(genesisBlock.transactions[0]);
 });
 

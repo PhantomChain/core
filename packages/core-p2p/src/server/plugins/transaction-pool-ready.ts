@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { TransactionPool } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { TransactionPool } from "@phantomcores/core-interfaces";
 import Boom from "boom";
 
 /**

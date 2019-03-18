@@ -1,6 +1,6 @@
-import { Database } from "@phantomchain/core-interfaces";
-import { delegateCalculator } from "@phantomchain/core-utils";
-import { Bignum, constants, crypto, models } from "@phantomchain/crypto";
+import { Database } from "@phantomcores/core-interfaces";
+import { delegateCalculator } from "@phantomcores/core-utils";
+import { Bignum, constants, crypto, models } from "@phantomcores/crypto";
 import genesisBlockTestnet from "../../../core-test-utils/src/config/testnet/genesisBlock.json";
 import { DelegatesRepository, WalletsRepository } from "../../src";
 import { DatabaseService } from "../../src/database-service";

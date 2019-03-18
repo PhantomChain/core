@@ -1,14 +1,14 @@
 {
-    "name": "@phantomchain/crypto",
+    "name": "@phantomcores/crypto",
     "description": "Crypto utilities for the Phantom Blockchain",
     "version": "2.2.1",
     "contributors": [
-        "François-Xavier Thoorens <fx.thoorens@phantom.org>",
-        "Brian Faust <brian@phantom.org>",
-        "Alex Barnsley <alex@phantom.org>",
-        "Lúcio Rubens <lucio@phantom.org>",
-        "Juan A. Martín <juan@phantom.org>",
-        "Joshua Noack <joshua@phantom.org>"
+        "François-Xavier Thoorens <fx.thoorens@ark.io>",
+        "Brian Faust <brian@ark.io>",
+        "Alex Barnsley <alex@ark.io>",
+        "Lúcio Rubens <lucio@ark.io>",
+        "Juan A. Martín <juan@ark.io>",
+        "Joshua Noack <joshua@ark.io>"
     ],
     "license": "MIT",
     "main": "dist/index",

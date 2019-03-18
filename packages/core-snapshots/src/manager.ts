@@ -1,8 +1,8 @@
 /* tslint:disable:max-line-length */
 
-import { app } from "@phantomchain/core-container";
-import { PostgresConnection } from "@phantomchain/core-database-postgres";
-import { Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { PostgresConnection } from "@phantomcores/core-database-postgres";
+import { Logger } from "@phantomcores/core-interfaces";
 import pick from "lodash/pick";
 
 const logger = app.resolvePlugin<Logger.ILogger>("logger");

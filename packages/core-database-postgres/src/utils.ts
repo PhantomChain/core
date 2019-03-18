@@ -1,7 +1,7 @@
 /* tslint:disable:forin prefer-for-of*/
 
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
 import path from "path";
 import { QueryFile } from "pg-promise";
 

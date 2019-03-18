@@ -1,6 +1,6 @@
-import { Database } from "@phantomchain/core-interfaces";
-import { delegateCalculator } from "@phantomchain/core-utils";
-import { orderBy } from "@phantomchain/utils";
+import { Database } from "@phantomcores/core-interfaces";
+import { delegateCalculator } from "@phantomcores/core-utils";
+import { orderBy } from "@phantomcores/utils";
 import limitRows from "./utils/limit-rows";
 import { sortEntries } from "./utils/sort-entries";
 

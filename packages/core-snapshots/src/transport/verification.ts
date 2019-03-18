@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
-import { crypto, models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
+import { crypto, models } from "@phantomcores/crypto";
 import createHash from "create-hash";
 import { camelizeKeys } from "xcase";
 

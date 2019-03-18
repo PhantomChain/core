@@ -1,4 +1,4 @@
-import { slots } from "@phantomchain/crypto";
+import { slots } from "@phantomcores/crypto";
 import assert from "assert";
 import { MemPoolTransaction } from "./mem-pool-transaction";
 

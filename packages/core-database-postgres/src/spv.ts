@@ -1,8 +1,8 @@
-import { Bignum, models } from "@phantomchain/crypto";
+import { Bignum, models } from "@phantomcores/crypto";
 const { Transaction } = models;
 
-import { app } from "@phantomchain/core-container";
-import { Database, Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Database, Logger } from "@phantomcores/core-interfaces";
 import { queries } from "./queries";
 import { QueryExecutor } from "./sql/query-executor";
 

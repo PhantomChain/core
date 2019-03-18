@@ -1,5 +1,5 @@
-import { Database } from "@phantomchain/core-interfaces";
-import { orderBy } from "@phantomchain/utils";
+import { Database } from "@phantomcores/core-interfaces";
+import { orderBy } from "@phantomcores/utils";
 
 export function sortEntries(params: Database.IParameters, entries: any[], defaultValue) {
     const [iteratee, order] = params.orderBy ? params.orderBy.split(":") : defaultValue;

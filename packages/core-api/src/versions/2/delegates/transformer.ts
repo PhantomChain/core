@@ -1,4 +1,4 @@
-import { bignumify, delegateCalculator, formatTimestamp } from "@phantomchain/core-utils";
+import { bignumify, delegateCalculator, formatTimestamp } from "@phantomcores/core-utils";
 
 export function transformDelegate(delegate) {
     const data = {

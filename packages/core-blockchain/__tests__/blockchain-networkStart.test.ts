@@ -1,5 +1,5 @@
 /* tslint:disable:max-line-length */
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 import { asValue } from "awilix";
 import { Blockchain } from "../src/blockchain";
 import { defaults } from "../src/defaults";

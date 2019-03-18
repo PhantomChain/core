@@ -1,8 +1,8 @@
 // tslint:disable:max-classes-per-file
-import { app } from "@phantomchain/core-container";
-import { Database, Logger } from "@phantomchain/core-interfaces";
-import { CappedSet, NSect, roundCalculator } from "@phantomchain/core-utils";
-import { models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Database, Logger } from "@phantomcores/core-interfaces";
+import { CappedSet, NSect, roundCalculator } from "@phantomcores/core-utils";
+import { models } from "@phantomcores/crypto";
 import assert from "assert";
 import { inspect } from "util";
 import { Peer } from "./peer";

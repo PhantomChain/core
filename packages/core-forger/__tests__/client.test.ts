@@ -1,6 +1,6 @@
 import "jest-extended";
 
-import { NetworkState, NetworkStateStatus } from "@phantomchain/core-p2p";
+import { NetworkState, NetworkStateStatus } from "@phantomcores/core-p2p";
 import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 import { Client } from "../src/client";

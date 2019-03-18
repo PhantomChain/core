@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, EventEmitter, Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, EventEmitter, Logger } from "@phantomcores/core-interfaces";
 import axios from "axios";
 import * as conditions from "./conditions";
 import { database } from "./database";

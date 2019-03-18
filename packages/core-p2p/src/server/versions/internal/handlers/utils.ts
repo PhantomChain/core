@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, EventEmitter } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, EventEmitter } from "@phantomcores/core-interfaces";
 
 const emitter = app.resolvePlugin<EventEmitter.EventEmitter>("event-emitter");
 

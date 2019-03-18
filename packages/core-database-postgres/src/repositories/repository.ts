@@ -1,4 +1,4 @@
-import { Database } from "@phantomchain/core-interfaces";
+import { Database } from "@phantomcores/core-interfaces";
 import { Model } from "../models";
 
 export abstract class Repository implements Database.IRepository {

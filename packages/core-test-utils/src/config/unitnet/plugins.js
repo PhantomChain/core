@@ -1,6 +1,6 @@
 module.exports = {
-    "@phantomchain/core-event-emitter": {},
-    "@phantomchain/core-logger-winston": {
+    "@phantomcores/core-event-emitter": {},
+    "@phantomcores/core-logger-winston": {
         transports: {
             console: {
                 options: {
@@ -14,7 +14,7 @@ module.exports = {
             },
         },
     },
-    "@phantomchain/core-database-postgres": {
+    "@phantomcores/core-database-postgres": {
         connection: {
             host: process.env.CORE_DB_HOST || "localhost",
             port: process.env.CORE_DB_PORT || 5432,
@@ -23,7 +23,7 @@ module.exports = {
             password: process.env.CORE_DB_PASSWORD || "password",
         },
     },
-    "@phantomchain/core-transaction-pool": {
+    "@phantomcores/core-transaction-pool": {
         enabled: !process.env.CORE_TRANSACTION_POOL_DISABLED,
         maxTransactionsPerSender: process.env.CORE_TRANSACTION_POOL_MAX_PER_SENDER || 300,
         allowedSenders: [],
@@ -35,23 +35,23 @@ module.exports = {
             minFeeBroadcast: 1000,
         },
     },
-    "@phantomchain/core-p2p": {
+    "@phantomcores/core-p2p": {
         host: process.env.CORE_P2P_HOST || "0.0.0.0",
         port: process.env.CORE_P2P_PORT || 4000,
         minimumVersions: [">=2.0.0"],
         minimumNetworkReach: 5,
         coldStart: 5,
     },
-    "@phantomchain/core-blockchain": {
+    "@phantomcores/core-blockchain": {
         fastRebuild: false,
     },
-    "@phantomchain/core-api": {
+    "@phantomcores/core-api": {
         enabled: !process.env.CORE_API_DISABLED,
         host: process.env.CORE_API_HOST || "0.0.0.0",
         port: process.env.CORE_API_PORT || 4003,
         whitelist: ["*"],
     },
-    "@phantomchain/core-webhooks": {
+    "@phantomcores/core-webhooks": {
         enabled: process.env.CORE_WEBHOOKS_ENABLED,
         server: {
             enabled: process.env.CORE_WEBHOOKS_API_ENABLED,
@@ -60,15 +60,15 @@ module.exports = {
             whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
         },
     },
-    "@phantomchain/core-graphql": {
+    "@phantomcores/core-graphql": {
         enabled: process.env.CORE_GRAPHQL_ENABLED,
         host: process.env.CORE_GRAPHQL_HOST || "0.0.0.0",
         port: process.env.CORE_GRAPHQL_PORT || 4005,
     },
-    "@phantomchain/core-forger": {
+    "@phantomcores/core-forger": {
         hosts: [`http://127.0.0.1:${process.env.CORE_P2P_PORT || 4000}`],
     },
-    "@phantomchain/core-json-rpc": {
+    "@phantomcores/core-json-rpc": {
         enabled: process.env.CORE_JSON_RPC_ENABLED,
         host: process.env.CORE_JSON_RPC_HOST || "0.0.0.0",
         port: process.env.CORE_JSON_RPC_PORT || 8080,

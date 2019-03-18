@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Database, Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Database, Logger } from "@phantomcores/core-interfaces";
 import Hapi from "hapi";
 import { paginate, respondWith, respondWithCache, toCollection, toResource } from "../utils";
 

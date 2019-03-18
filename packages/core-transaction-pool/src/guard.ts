@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Database, Logger, TransactionPool as transactionPool } from "@phantomchain/core-interfaces";
-import { configManager, constants, models, slots } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Database, Logger, TransactionPool as transactionPool } from "@phantomcores/core-interfaces";
+import { configManager, constants, models, slots } from "@phantomcores/crypto";
 import pluralize from "pluralize";
 import { TransactionPool } from "./connection";
 import { dynamicFeeMatcher } from "./dynamic-fee";

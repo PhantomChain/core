@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain } from "@phantomchain/core-interfaces";
-import { Bignum } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain } from "@phantomcores/core-interfaces";
+import { Bignum } from "@phantomcores/crypto";
 
 const BignumMod = Bignum.clone({ DECIMAL_PLACES: 2 });
 

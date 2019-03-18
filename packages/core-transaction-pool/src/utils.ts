@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
-import { configManager } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
+import { configManager } from "@phantomcores/crypto";
 import bs58check from "bs58check";
 
 const logger = app.resolvePlugin<Logger.ILogger>("logger");

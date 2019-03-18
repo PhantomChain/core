@@ -1,6 +1,6 @@
 import "jest-extended";
 
-import { models, slots } from "@phantomchain/crypto";
+import { models, slots } from "@phantomcores/crypto";
 import { isBlockChained } from "../../src/utils";
 
 describe("isChained", () => {

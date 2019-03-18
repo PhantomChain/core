@@ -1,5 +1,5 @@
-import "@phantomchain/core-test-utils";
-import { Bignum } from "@phantomchain/crypto";
+import "@phantomcores/core-test-utils";
+import { Bignum } from "@phantomcores/crypto";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 

@@ -1,6 +1,6 @@
 const {
     models
-} = require('@phantomchain/crypto')
+} = require('@phantomcores/crypto')
 
 exports.deserialize = data => {
     return models.Transaction.deserialize(data)

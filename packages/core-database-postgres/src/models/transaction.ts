@@ -1,4 +1,4 @@
-import { bignumify } from "@phantomchain/core-utils";
+import { bignumify } from "@phantomcores/core-utils";
 import { Model } from "./model";
 
 export class Transaction extends Model {

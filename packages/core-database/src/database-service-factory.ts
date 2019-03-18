@@ -1,4 +1,4 @@
-import { Database } from "@phantomchain/core-interfaces";
+import { Database } from "@phantomcores/core-interfaces";
 import { DatabaseService } from "./database-service";
 import { DelegatesRepository } from "./repositories/delegates";
 import { WalletsRepository } from "./repositories/wallets";

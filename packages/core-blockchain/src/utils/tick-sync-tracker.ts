@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Logger, P2P } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Logger, P2P } from "@phantomcores/core-interfaces";
 import prettyMs from "pretty-ms";
 
 const logger = app.resolvePlugin<Logger.ILogger>("logger");

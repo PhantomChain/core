@@ -1,4 +1,4 @@
-import "@phantomchain/core-jest-matchers";
+import "@phantomcores/core-jest-matchers";
 
 import * as fixtures from "./fixtures";
 import * as generators from "./generators";

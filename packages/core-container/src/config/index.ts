@@ -1,4 +1,4 @@
-import { configManager as crypto, HashAlgorithms } from "@phantomchain/crypto";
+import { configManager as crypto, HashAlgorithms } from "@phantomcores/crypto";
 import get from "lodash/get";
 import set from "lodash/set";
 import { fileLoader } from "./loaders";
@@ -39,7 +39,7 @@ class Config {
     }
 
     /**
-     * Configure the @phantomchain/crypto package.
+     * Configure the @phantomcores/crypto package.
      * @return {void}
      */
     private configureCrypto(value: any): void {

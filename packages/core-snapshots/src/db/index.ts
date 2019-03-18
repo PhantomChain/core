@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { migrations, plugin, PostgresConnection } from "@phantomchain/core-database-postgres";
-import { Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { migrations, plugin, PostgresConnection } from "@phantomcores/core-database-postgres";
+import { Logger } from "@phantomcores/core-interfaces";
 import promise from "bluebird";
 
 import { queries } from "./queries";

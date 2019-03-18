@@ -1,5 +1,5 @@
-import { bignumify } from "@phantomchain/core-utils";
-import { Bignum, client, formatSatoshi } from "@phantomchain/crypto";
+import { bignumify } from "@phantomcores/core-utils";
+import { Bignum, client, formatSatoshi } from "@phantomcores/crypto";
 import axios from "axios";
 import pino from "pino";
 

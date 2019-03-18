@@ -1,5 +1,5 @@
-import { bignumify } from "@phantomchain/core-utils";
-import { Bignum, crypto } from "@phantomchain/crypto";
+import { bignumify } from "@phantomcores/core-utils";
+import { Bignum, crypto } from "@phantomcores/crypto";
 import Command, { flags } from "@oclif/command";
 import bip39 from "bip39";
 import clipboardy from "clipboardy";

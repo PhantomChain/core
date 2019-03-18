@@ -1,5 +1,5 @@
 /* tslint:disable:max-line-length */
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import {
     Blockchain as blockchain,
     Database,
@@ -7,8 +7,8 @@ import {
     Logger,
     P2P,
     TransactionPool,
-} from "@phantomchain/core-interfaces";
-import { models, slots } from "@phantomchain/crypto";
+} from "@phantomcores/core-interfaces";
+import { models, slots } from "@phantomcores/crypto";
 
 import delay from "delay";
 import pluralize from "pluralize";

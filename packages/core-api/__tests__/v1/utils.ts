@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { ApiHelpers } from "@phantomchain/core-test-utils/dist/helpers/api";
-import { client, NetworkManager, transactionBuilder } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { ApiHelpers } from "@phantomcores/core-test-utils/dist/helpers/api";
+import { client, NetworkManager, transactionBuilder } from "@phantomcores/crypto";
 import axios from "axios";
 import "jest-extended";
 

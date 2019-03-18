@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import * as bs58check from "bs58check";
 
 export function registerAddressFormat(ajv) {

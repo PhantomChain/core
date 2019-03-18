@@ -1,9 +1,9 @@
 {
-    "name": "@phantomchain/core-container",
+    "name": "@phantomcores/core-container",
     "description": "Container for Phantom Core",
     "version": "2.2.1",
     "contributors": [
-        "Brian Faust <brian@phantom.org>"
+        "Brian Faust <brian@ark.io>"
     ],
     "license": "MIT",
     "main": "dist/index",
@@ -32,8 +32,8 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-interfaces": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/core-interfaces": "^2.2.2",
+        "@phantomcores/crypto": "^2.2.1",
         "awilix": "^4.2.0",
         "axios": "^0.18.0",
         "delay": "^4.1.0",

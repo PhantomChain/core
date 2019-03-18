@@ -1,6 +1,6 @@
 import "jest-extended";
 
-import { generators } from "@phantomchain/core-test-utils";
+import { generators } from "@phantomcores/core-test-utils";
 const { generateTransfers } = generators;
 
 import ByteBuffer from "bytebuffer";
@@ -367,7 +367,7 @@ describe("Models - Block", () => {
     describe("serializeFull", () => {
         describe("genesis block", () => {
             describe.each([["mainnet", 468048], ["devnet", 14492], ["testnet", 46488]])("%s", (network, length) => {
-                const genesis = require(`@phantomchain/crypto/src/networks/${network}/genesisBlock.json`);
+                const genesis = require(`@phantomcores/crypto/src/networks/${network}/genesisBlock.json`);
                 const serialized = Block.serializeFull(genesis).toString("hex");
                 const genesisBlock = new Block(Block.deserialize(serialized));
                 expect(serialized).toHaveLength(length);

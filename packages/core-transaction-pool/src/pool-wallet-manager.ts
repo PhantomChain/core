@@ -1,7 +1,7 @@
-import { app } from "@phantomchain/core-container";
-import { WalletManager } from "@phantomchain/core-database";
-import { Database } from "@phantomchain/core-interfaces";
-import { constants, crypto, isException, models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { WalletManager } from "@phantomcores/core-database";
+import { Database } from "@phantomcores/core-interfaces";
+import { constants, crypto, isException, models } from "@phantomcores/crypto";
 
 const { Wallet } = models;
 const { TransactionTypes } = constants;

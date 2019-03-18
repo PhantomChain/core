@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { ApiHelpers } from "@phantomchain/core-test-utils/src/helpers/api";
+import { app } from "@phantomcores/core-container";
+import { ApiHelpers } from "@phantomcores/core-test-utils/src/helpers/api";
 
 class Helpers {
     public headers: any;

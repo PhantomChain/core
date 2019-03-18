@@ -1,5 +1,5 @@
-import { Database } from "@phantomchain/core-interfaces";
-import { Bignum, crypto, models } from "@phantomchain/crypto";
+import { Database } from "@phantomcores/core-interfaces";
+import { Bignum, crypto, models } from "@phantomcores/crypto";
 import compact from "lodash/compact";
 import uniq from "lodash/uniq";
 import genesisBlockTestnet from "../../../core-test-utils/src/config/testnet/genesisBlock.json";

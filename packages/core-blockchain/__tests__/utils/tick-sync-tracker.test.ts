@@ -1,7 +1,7 @@
 import "jest-extended";
 
 const info = jest.fn();
-jest.mock("@phantomchain/core-container", () => {
+jest.mock("@phantomcores/core-container", () => {
     return {
         app: {
             resolvePlugin: name => ({

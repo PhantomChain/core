@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Database } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Database } from "@phantomcores/core-interfaces";
 import Boom from "boom";
 import { transactionsRepository } from "../../../repositories";
 import { ServerCache } from "../../../services";

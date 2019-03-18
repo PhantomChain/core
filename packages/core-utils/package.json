@@ -1,9 +1,9 @@
 {
-    "name": "@phantomchain/core-utils",
+    "name": "@phantomcores/utils",
     "description": "Utilities for Phantom Core",
     "version": "2.2.1",
     "contributors": [
-        "Brian Faust <brian@phantom.org>"
+        "Brian Faust <brian@ark.io"
     ],
     "license": "MIT",
     "main": "dist/index.js",
@@ -31,8 +31,8 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
+        "@phantomcores/crypto": "^2.2.1",
         "cli-table3": "^0.5.1",
         "dayjs-ext": "^2.2.0"
     },

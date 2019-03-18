@@ -1,6 +1,6 @@
 import {
-    DatabaseManager, databaseServiceFactory, WalletManager} from "@phantomchain/core-database";
-import { Container, Database, Logger } from "@phantomchain/core-interfaces";
+    DatabaseManager, databaseServiceFactory, WalletManager} from "@phantomcores/core-database";
+import { Container, Database, Logger } from "@phantomcores/core-interfaces";
 import { defaults } from "./defaults";
 import { PostgresConnection } from "./postgres-connection";
 
@@ -8,7 +8,7 @@ export const plugin: Container.PluginDescriptor = {
     pkg: require("../package.json"),
     defaults,
     alias: "database",
-    extends: "@phantomchain/core-database",
+    extends: "@phantomcores/core-database",
     async register(container: Container.IContainer, options) {
         container.resolvePlugin<Logger.ILogger>("logger").info("Establishing Database Connection");
 

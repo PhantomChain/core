@@ -1,7 +1,7 @@
-import "@phantomchain/core-test-utils";
-import { blocks101to155 } from "@phantomchain/core-test-utils/src/fixtures/testnet/blocks101to155";
-import { blocks2to100 } from "@phantomchain/core-test-utils/src/fixtures/testnet/blocks2to100";
-import { models } from "@phantomchain/crypto";
+import "@phantomcores/core-test-utils";
+import { blocks101to155 } from "@phantomcores/core-test-utils/src/fixtures/testnet/blocks101to155";
+import { blocks2to100 } from "@phantomcores/core-test-utils/src/fixtures/testnet/blocks2to100";
+import { models } from "@phantomcores/crypto";
 import delay from "delay";
 import { config } from "../src/config";
 import { defaults } from "../src/defaults";

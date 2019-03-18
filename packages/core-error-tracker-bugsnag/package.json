@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-error-tracker-bugsnag",
+    "name": "@phantomcores/core-error-tracker-bugsnag",
     "description": "Bugsnag error tracker integration for Phantom Core.",
     "version": "2.2.1",
     "contributors": [
@@ -26,7 +26,7 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
         "@bugsnag/js": "^5.2.0"
     },
     "publishConfig": {

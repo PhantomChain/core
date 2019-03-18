@@ -1,8 +1,8 @@
 /* tslint:disable:max-line-length no-empty */
-import { Database } from "@phantomchain/core-interfaces";
-import { fixtures, generators } from "@phantomchain/core-test-utils";
-import { Bignum, constants, crypto, models, transactionBuilder } from "@phantomchain/crypto";
-import { IMultiSignatureAsset } from "@phantomchain/crypto/dist/models";
+import { Database } from "@phantomcores/core-interfaces";
+import { fixtures, generators } from "@phantomcores/core-test-utils";
+import { Bignum, constants, crypto, models, transactionBuilder } from "@phantomcores/crypto";
+import { IMultiSignatureAsset } from "@phantomcores/crypto/dist/models";
 import genesisBlockTestnet from "../../core-test-utils/src/config/testnet/genesisBlock.json";
 import wallets from "./__fixtures__/wallets.json";
 import { setUp, tearDown } from "./__support__/setup";

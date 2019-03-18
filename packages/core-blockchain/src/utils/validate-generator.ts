@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
-import { models, slots } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
+import { models, slots } from "@phantomcores/crypto";
 
 export const validateGenerator = async (block: models.Block): Promise<boolean> => {
     const database = app.resolvePlugin("database");

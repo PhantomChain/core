@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-forger",
+    "name": "@phantomcores/core-forger",
     "description": "Forger for Phantom Core",
     "version": "2.2.1",
     "contributors": [
@@ -33,10 +33,10 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
-        "@phantomchain/core-interfaces": "^2.2.1",
-        "@phantomchain/core-p2p": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
+        "@phantomcores/core-interfaces": "^2.2.2",
+        "@phantomcores/core-p2p": "^2.2.1",
+        "@phantomcores/crypto": "^2.2.1",
         "axios": "^0.18.0",
         "delay": "^4.1.0",
         "lodash.isempty": "^4.4.0",
@@ -45,7 +45,7 @@
         "pluralize": "^7.0.0"
     },
     "devDependencies": {
-        "@phantomchain/core-test-utils": "^2.2.1",
+        "@phantomcores/core-test-utils": "^2.2.1",
         "@types/lodash.isempty": "^4.4.4",
         "@types/lodash.sample": "^4.2.4",
         "@types/lodash.uniq": "^4.5.4",

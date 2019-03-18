@@ -1,4 +1,4 @@
-import { Bignum } from "@phantomchain/crypto";
+import { Bignum } from "@phantomcores/crypto";
 import "jest-extended";
 import { bignumify } from "../src/bignumify";
 

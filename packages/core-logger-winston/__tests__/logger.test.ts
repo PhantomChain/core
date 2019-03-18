@@ -1,4 +1,4 @@
-import { AbstractLogger } from "@phantomchain/core-logger";
+import { AbstractLogger } from "@phantomcores/core-logger";
 import * as capcon from "capture-console";
 import "jest-extended";
 import * as winston from "winston";

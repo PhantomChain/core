@@ -1,8 +1,8 @@
-import { Logger } from "@phantomchain/core-interfaces";
+import { Logger } from "@phantomcores/core-interfaces";
 import path from "path";
 import { QueryFile } from "pg-promise";
 
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 
 const logger = app.resolvePlugin<Logger.ILogger>("logger");
 

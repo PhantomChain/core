@@ -1,7 +1,7 @@
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 import "jest-extended";
 
-import { crypto } from "@phantomchain/crypto";
+import { crypto } from "@phantomcores/crypto";
 import genesisBlock from "../../../core-test-utils/src/config/testnet/genesisBlock.json";
 // noinspection TypeScriptPreferShortImport
 import { TransactionsRepository } from "../../dist/repositories/transactions";

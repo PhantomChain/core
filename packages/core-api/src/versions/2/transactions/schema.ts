@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Joi } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Joi } from "@phantomcores/crypto";
 import { pagination } from "../shared/schemas/pagination";
 
 export const index: object = {

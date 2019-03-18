@@ -1,4 +1,4 @@
-import { Container } from "@phantomchain/core-interfaces";
+import { Container } from "@phantomcores/core-interfaces";
 import bugsnag from "@bugsnag/js";
 import { defaults } from "./defaults";
 

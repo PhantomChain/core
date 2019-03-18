@@ -1,11 +1,11 @@
 export function transformPortsLegacy(config: any) {
     const result = {};
     const keys = [
-        "@phantomchain/core-p2p",
-        "@phantomchain/core-api",
-        "@phantomchain/core-graphql",
-        "@phantomchain/core-json-rpc",
-        "@phantomchain/core-webhooks",
+        "@phantomcores/core-p2p",
+        "@phantomcores/core-api",
+        "@phantomcores/core-graphql",
+        "@phantomcores/core-json-rpc",
+        "@phantomcores/core-webhooks",
     ];
 
     const plugins = config.get("plugins");

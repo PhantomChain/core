@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Container } from "@phantomchain/core-interfaces";
-import "@phantomchain/core-jest-matchers";
+import { app } from "@phantomcores/core-container";
+import { Container } from "@phantomcores/core-interfaces";
+import "@phantomcores/core-jest-matchers";
 import { asValue } from "awilix";
 import isString from "lodash/isString";
 import * as path from "path";

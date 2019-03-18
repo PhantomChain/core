@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { setUpContainer } from "@phantomchain/core-test-utils/src/helpers/container";
+import { app } from "@phantomcores/core-container";
+import { setUpContainer } from "@phantomcores/core-test-utils/src/helpers/container";
 import { database } from "../../src/database";
 import { webhookManager } from "../../src/manager";
 import { startServer } from "../../src/server";
@@ -10,7 +10,7 @@ async function setUp() {
     process.env.CORE_WEBHOOKS_ENABLED = "true";
 
     await setUpContainer({
-        exclude: ["@phantomchain/core-api", "@phantomchain/core-graphql", "@phantomchain/core-forger"],
+        exclude: ["@phantomcores/core-api", "@phantomcores/core-graphql", "@phantomcores/core-forger"],
     });
 
     await database.setUp({

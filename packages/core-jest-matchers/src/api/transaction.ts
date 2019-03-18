@@ -1,4 +1,4 @@
-import { sortBy } from "@phantomchain/utils";
+import { sortBy } from "@phantomcores/utils";
 import isEqual from "lodash/isEqual";
 
 export {};

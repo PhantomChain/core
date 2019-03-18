@@ -1,9 +1,9 @@
 {
-    "name": "@phantomchain/core-http-utils",
+    "name": "@phantomcores/core-http-utils",
     "description": "Http Utilities for Phantom Core",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "contributors": [
-        "Brian Faust <brian@phantom.org>"
+        "Brian Faust <brian@ark.io>"
     ],
     "license": "MIT",
     "main": "dist/index.js",
@@ -31,7 +31,7 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
         "boom": "^7.3.0",
         "expand-home-dir": "^0.0.3",
         "good": "^8.1.2",

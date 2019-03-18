@@ -1,4 +1,4 @@
-import { Bignum, crypto } from "@phantomchain/crypto";
+import { Bignum, crypto } from "@phantomcores/crypto";
 import { flags } from "@oclif/command";
 import delay from "delay";
 import unique from "lodash/uniq";

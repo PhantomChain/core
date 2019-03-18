@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Database } from "@phantomchain/core-interfaces";
-import { slots } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Database } from "@phantomcores/core-interfaces";
+import { slots } from "@phantomcores/crypto";
 
 const config = app.getConfig();
 

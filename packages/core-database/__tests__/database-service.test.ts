@@ -1,5 +1,5 @@
-import { Container, Database, EventEmitter } from "@phantomchain/core-interfaces";
-import { Bignum, constants, models, transactionBuilder } from "@phantomchain/crypto";
+import { Container, Database, EventEmitter } from "@phantomcores/core-interfaces";
+import { Bignum, constants, models, transactionBuilder } from "@phantomcores/crypto";
 import "jest-extended";
 import { WalletManager } from "../src";
 import { DatabaseService } from "../src/database-service";
@@ -21,7 +21,7 @@ let emitter: EventEmitter.EventEmitter;
 beforeAll(async () => {
     container = await setUp();
     emitter = container.resolvePlugin<EventEmitter.EventEmitter>("event-emitter");
-    genesisBlock = new Block(require("@phantomchain/core-test-utils/src/config/testnet/genesisBlock.json"));
+    genesisBlock = new Block(require("@phantomcores/core-test-utils/src/config/testnet/genesisBlock.json"));
     connection = new DatabaseConnectionStub();
     walletManager = new WalletManager();
 });

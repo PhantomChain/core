@@ -5,13 +5,13 @@
 ## Installation
 
 ```bash
-yarn add @phantomchain/crypto
+yarn add @phantomcores/crypto
 ```
 
 If you want to use the CDN version:
 
 ```html
-<script src="https://unpkg.com/@phantomchain/crypto/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@phantomcores/crypto/dist/index.umd.js"></script>
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ If you want to use the CDN version:
 Import the library in node.js:
 
 ```
-import PhantomCrypto from @phantomchain/crypto
+import PhantomCrypto from @phantomcores/crypto
 ```
 
 Use the library:

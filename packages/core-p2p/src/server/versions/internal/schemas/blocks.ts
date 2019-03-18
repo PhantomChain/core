@@ -1,4 +1,4 @@
-import { Joi } from "@phantomchain/crypto";
+import { Joi } from "@phantomcores/crypto";
 
 /**
  * @type {Object}

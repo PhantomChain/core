@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Database } from "@phantomchain/core-interfaces";
-import { bignumify, formatTimestamp } from "@phantomchain/core-utils";
+import { app } from "@phantomcores/core-container";
+import { Database } from "@phantomcores/core-interfaces";
+import { bignumify, formatTimestamp } from "@phantomcores/core-utils";
 
 export function transformBlock(model) {
     const databaseService = app.resolvePlugin<Database.IDatabaseService>("database");

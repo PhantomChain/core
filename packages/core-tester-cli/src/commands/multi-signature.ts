@@ -1,4 +1,4 @@
-import { client } from "@phantomchain/crypto";
+import { client } from "@phantomcores/crypto";
 import { flags } from "@oclif/command";
 import take from "lodash/take";
 import pluralize from "pluralize";

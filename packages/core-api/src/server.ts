@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { createSecureServer, createServer, mountServer, plugins } from "@phantomchain/core-http-utils";
-import { Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { createSecureServer, createServer, mountServer, plugins } from "@phantomcores/core-http-utils";
+import { Logger } from "@phantomcores/core-interfaces";
 import Hapi from "hapi";
 
 export class Server {

@@ -1,6 +1,6 @@
 const {
     models
-} = require('@phantomchain/crypto')
+} = require('@phantomcores/crypto')
 
 const data = require('../helpers').getJSONFixture('block/deserialized/transactions');
 

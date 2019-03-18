@@ -1,6 +1,6 @@
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 

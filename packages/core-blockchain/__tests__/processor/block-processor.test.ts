@@ -1,7 +1,7 @@
-import "@phantomchain/core-test-utils";
-import { fixtures, generators } from "@phantomchain/core-test-utils";
-import genesisBlockTestnet from "@phantomchain/core-test-utils/src/config/testnet/genesisBlock.json";
-import { models } from "@phantomchain/crypto";
+import "@phantomcores/core-test-utils";
+import { fixtures, generators } from "@phantomcores/core-test-utils";
+import genesisBlockTestnet from "@phantomcores/core-test-utils/src/config/testnet/genesisBlock.json";
+import { models } from "@phantomcores/crypto";
 import { Blockchain } from "../../src/blockchain";
 import { BlockProcessor, BlockProcessorResult } from "../../src/processor";
 import * as handlers from "../../src/processor/handlers";

@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -35,10 +35,10 @@ $ phantom relay:run --launchMode=seed
         const { flags } = await this.parseWithNetwork(RunCommand);
 
         await this.buildApplication(app, flags, {
-            exclude: ["@phantomchain/core-forger"],
+            exclude: ["@phantomcores/core-forger"],
             options: {
-                "@phantomchain/core-p2p": this.buildPeerOptions(flags),
-                "@phantomchain/core-blockchain": {
+                "@phantomcores/core-p2p": this.buildPeerOptions(flags),
+                "@phantomcores/core-blockchain": {
                     networkStart: flags.networkStart,
                 },
             },

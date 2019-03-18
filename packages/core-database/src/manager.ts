@@ -1,4 +1,4 @@
-import { Database } from "@phantomchain/core-interfaces";
+import { Database } from "@phantomcores/core-interfaces";
 
 export class DatabaseManager {
     public connections: { [key: string]: Database.IDatabaseConnection };

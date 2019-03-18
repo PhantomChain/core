@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
-import { NetworkState, NetworkStateStatus } from "@phantomchain/core-p2p";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
+import { NetworkState, NetworkStateStatus } from "@phantomcores/core-p2p";
 import axios from "axios";
 import delay from "delay";
 import sample from "lodash/sample";

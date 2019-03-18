@@ -1,4 +1,4 @@
-import { Bignum, models } from "@phantomchain/crypto";
+import { Bignum, models } from "@phantomcores/crypto";
 import msgpack from "msgpack-lite";
 import { camelizeKeys, decamelizeKeys } from "xcase";
 const { Block, Transaction } = models;

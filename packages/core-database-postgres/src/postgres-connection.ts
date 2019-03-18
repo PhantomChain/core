@@ -1,7 +1,7 @@
-import { app } from "@phantomchain/core-container";
-import { Database, EventEmitter, Logger } from "@phantomchain/core-interfaces";
-import { roundCalculator } from "@phantomchain/core-utils";
-import { models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Database, EventEmitter, Logger } from "@phantomcores/core-interfaces";
+import { roundCalculator } from "@phantomcores/core-utils";
+import { models } from "@phantomcores/crypto";
 import fs from "fs";
 import chunk from "lodash/chunk";
 import path from "path";

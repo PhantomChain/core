@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
 import shuffle from "lodash/shuffle";
 import Sntp from "sntp";
 

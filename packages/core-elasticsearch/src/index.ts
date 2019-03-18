@@ -1,4 +1,4 @@
-import { Container } from "@phantomchain/core-interfaces";
+import { Container } from "@phantomcores/core-interfaces";
 import { client } from "./client";
 import { defaults } from "./defaults";
 import { watchIndices } from "./indices";

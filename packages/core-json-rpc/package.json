@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-json-rpc",
+    "name": "@phantomcores/core-json-rpc",
     "description": "A JSON-RPC 2.0 Specification compliant server to interact with the Phantom Blockchain.",
     "version": "2.2.1",
     "contributors": [
@@ -32,10 +32,10 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
-        "@phantomchain/core-http-utils": "^2.2.1",
-        "@phantomchain/core-interfaces": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
+        "@phantomcores/core-http-utils": "^2.2.2",
+        "@phantomcores/core-interfaces": "^2.2.2",
+        "@phantomcores/crypto": "^2.2.1",
         "@keyv/sqlite": "^2.0.0",
         "axios": "^0.18.0",
         "bip39": "^2.5.0",
@@ -48,8 +48,8 @@
         "wif": "^2.0.6"
     },
     "devDependencies": {
-        "@phantomchain/core-p2p": "^2.2.1",
-        "@phantomchain/core-test-utils": "^2.2.1",
+        "@phantomcores/core-p2p": "^2.2.1",
+        "@phantomcores/core-test-utils": "^2.2.1",
         "@types/bip39": "^2.4.1",
         "@types/boom": "^7.2.1",
         "@types/is-reachable": "^3.0.0",

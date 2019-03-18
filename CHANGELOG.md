@@ -133,7 +133,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 
 -   Removed the `transactionsFromIds` P2P endpoint ([#1911])
--   Removed the `validator` and `rules` fron `@phantomchain/crypto` ([#2021])
+-   Removed the `validator` and `rules` fron `@phantomcores/crypto` ([#2021])
 -   Ended support for the legacy multisignatures from the previous LISK fork ([#2057])
 
 ## [2.0.19] - 2019-01-31

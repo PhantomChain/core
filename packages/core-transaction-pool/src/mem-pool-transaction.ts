@@ -1,6 +1,6 @@
 // tslint:disable:variable-name
 
-import { constants, models } from "@phantomchain/crypto";
+import { constants, models } from "@phantomcores/crypto";
 import assert from "assert";
 
 const { TransactionTypes } = constants;

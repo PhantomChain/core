@@ -1,5 +1,5 @@
-import { generators } from "@phantomchain/core-test-utils";
-import { delegates } from "@phantomchain/core-test-utils/src/fixtures/unitnet/delegates";
+import { generators } from "@phantomcores/core-test-utils";
+import { delegates } from "@phantomcores/core-test-utils/src/fixtures/unitnet/delegates";
 const { generateTransfers } = generators;
 
 export const transactions = {

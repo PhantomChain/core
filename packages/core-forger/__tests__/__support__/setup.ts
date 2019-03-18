@@ -1,9 +1,9 @@
-import { app } from "@phantomchain/core-container";
-import { setUpContainer } from "@phantomchain/core-test-utils/src/helpers/container";
+import { app } from "@phantomcores/core-container";
+import { setUpContainer } from "@phantomcores/core-test-utils/src/helpers/container";
 
 export const setUp = async () => {
     return setUpContainer({
-        exit: "@phantomchain/core-p2p",
+        exit: "@phantomcores/core-p2p",
     });
 };
 

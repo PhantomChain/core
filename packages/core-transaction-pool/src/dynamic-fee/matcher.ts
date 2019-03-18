@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
-import { constants, feeManager, formatSatoshi } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
+import { constants, feeManager, formatSatoshi } from "@phantomcores/crypto";
 import camelCase from "lodash/camelCase";
 import { config as localConfig } from "../config";
 

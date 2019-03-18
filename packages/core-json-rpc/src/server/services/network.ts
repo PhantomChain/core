@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Logger, P2P } from "@phantomchain/core-interfaces";
-import { configManager } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Logger, P2P } from "@phantomcores/core-interfaces";
+import { configManager } from "@phantomcores/crypto";
 import axios from "axios";
 import isReachable from "is-reachable";
 import sample from "lodash/sample";
@@ -73,7 +73,7 @@ class Network {
             const peerPort = app.resolveOptions("p2p").port;
             const response = await axios.get(`http://${this.server.ip}:${peerPort}/config`);
 
-            const plugin = response.data.data.plugins["@phantomchain/core-api"];
+            const plugin = response.data.data.plugins["@phantomcores/core-api"];
 
             if (!plugin.enabled) {
                 const index = this.peers.findIndex(peer => peer.ip === this.server.ip);

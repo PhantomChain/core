@@ -1,5 +1,5 @@
-import { Database } from "@phantomchain/core-interfaces";
-import { orderBy } from "@phantomchain/utils";
+import { Database } from "@phantomcores/core-interfaces";
+import { orderBy } from "@phantomcores/utils";
 import filterRows from "./utils/filter-rows";
 import limitRows from "./utils/limit-rows";
 import { sortEntries } from "./utils/sort-entries";

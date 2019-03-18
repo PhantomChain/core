@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 
 jest.setTimeout(60000);
@@ -17,10 +17,10 @@ export async function setUp() {
 
     await setUpContainer({
         exclude: [
-            "@phantomchain/core-webhooks",
-            "@phantomchain/core-graphql",
-            "@phantomchain/core-forger",
-            "@phantomchain/core-json-rpc",
+            "@phantomcores/core-webhooks",
+            "@phantomcores/core-graphql",
+            "@phantomcores/core-forger",
+            "@phantomcores/core-json-rpc",
         ],
     });
 

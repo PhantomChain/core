@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Database } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Database } from "@phantomcores/core-interfaces";
 import delay from "delay";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 import { plugin } from "../../src/plugin";
@@ -23,11 +23,11 @@ async function setUp() {
 
     await setUpContainer({
         exclude: [
-            "@phantomchain/core-webhooks",
-            "@phantomchain/core-graphql",
-            "@phantomchain/core-forger",
-            "@phantomchain/core-json-rpc",
-            "@phantomchain/core-api",
+            "@phantomcores/core-webhooks",
+            "@phantomcores/core-graphql",
+            "@phantomcores/core-forger",
+            "@phantomcores/core-json-rpc",
+            "@phantomcores/core-api",
         ],
     });
 

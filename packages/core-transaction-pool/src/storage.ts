@@ -1,4 +1,4 @@
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 import BetterSqlite3 from "better-sqlite3";
 import fs from "fs-extra";
 import { MemPoolTransaction } from "./mem-pool-transaction";

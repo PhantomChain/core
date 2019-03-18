@@ -1,4 +1,4 @@
-import "@phantomchain/core-test-utils/";
+import "@phantomcores/core-test-utils/";
 
 import { blockchainMachine } from "../../../src/machines/blockchain";
 

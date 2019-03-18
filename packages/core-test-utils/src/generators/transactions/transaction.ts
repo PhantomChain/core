@@ -1,4 +1,4 @@
-import { client, constants, crypto } from "@phantomchain/crypto";
+import { client, constants, crypto } from "@phantomcores/crypto";
 import superheroes from "superheroes";
 import { delegatesSecrets } from "../../fixtures/testnet/passphrases";
 

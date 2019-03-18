@@ -1,4 +1,4 @@
-import { Logger } from "@phantomchain/core-interfaces";
+import { Logger } from "@phantomcores/core-interfaces";
 
 export class LogManager {
     private drivers: Map<string, Logger.ILogger>;

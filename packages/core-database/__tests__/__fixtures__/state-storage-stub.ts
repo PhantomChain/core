@@ -1,6 +1,6 @@
 /* tslint:disable:no-empty */
-import { Blockchain } from "@phantomchain/core-interfaces";
-import { models } from "@phantomchain/crypto";
+import { Blockchain } from "@phantomcores/core-interfaces";
+import { models } from "@phantomcores/crypto";
 
 export class StateStorageStub implements Blockchain.IStateStorage {
     public cacheTransactions(transactions: models.ITransactionData[]): { added: models.ITransactionData[]; notAdded: models.ITransactionData[] } {

@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-logger",
+    "name": "@phantomcores/core-logger",
     "description": "Logger Manager for Phantom Core",
     "version": "2.2.1",
     "contributors": [
@@ -32,7 +32,7 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-interfaces": "^2.2.1"
+        "@phantomcores/core-interfaces": "^2.2.2"
     },
     "publishConfig": {
         "access": "public"

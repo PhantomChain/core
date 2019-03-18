@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 
 jest.setTimeout(60000);
@@ -15,13 +15,13 @@ const options = {
 
 export const setUp = async () => {
     await setUpContainer({
-        exit: "@phantomchain/core-database-postgres",
-        exclude: ["@phantomchain/core-database-postgres"],
+        exit: "@phantomcores/core-database-postgres",
+        exclude: ["@phantomcores/core-database-postgres"],
     });
 
     // register first core-database because core-database-postgres extends it
     // (we might improve registerWithContainer to take care of extends)
-    const { plugin: pluginDatabase } = require("@phantomchain/core-database");
+    const { plugin: pluginDatabase } = require("@phantomcores/core-database");
     await registerWithContainer(pluginDatabase, options);
 
     const { plugin } = require("../../src/plugin");

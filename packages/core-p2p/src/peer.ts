@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Logger, P2P } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Logger, P2P } from "@phantomcores/core-interfaces";
 import axios from "axios";
 import dayjs from "dayjs-ext";
 import Joi from "joi";

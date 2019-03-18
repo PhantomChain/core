@@ -190,9 +190,9 @@ const main = async () => {
     // Update plugins file
     console.log('Update plugins configuration');
     let pluginContents = fs.readFileSync(`${paths.config.new}/plugins.js`).toString();
-    pluginContents = pluginContents.replace('@phantomchain/core-transaction-pool-mem', '@phantomchain/core-transaction-pool');
-    pluginContents = pluginContents.replace('"@phantomchain/core-config": {},', '');
-    pluginContents = pluginContents.replace("'@phantomchain/core-config': {},", '');
+    pluginContents = pluginContents.replace('@phantomcores/core-transaction-pool-mem', '@phantomcores/core-transaction-pool');
+    pluginContents = pluginContents.replace('"@phantomcores/core-config": {},', '');
+    pluginContents = pluginContents.replace("'@phantomcores/core-config': {},", '');
     pluginContents = pluginContents.replace(new RegExp('PHANTOM_', 'g'), 'CORE_');
     fs.writeFileSync(`${paths.config.new}/plugins.js`, pluginContents);
 

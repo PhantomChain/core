@@ -5,8 +5,8 @@ import QueryStream from "pg-query-stream";
 import pluralize from "pluralize";
 import zlib from "zlib";
 
-import { app } from "@phantomchain/core-container";
-import { EventEmitter, Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { EventEmitter, Logger } from "@phantomcores/core-interfaces";
 
 import * as utils from "../utils";
 import { getCodec } from "./codecs";

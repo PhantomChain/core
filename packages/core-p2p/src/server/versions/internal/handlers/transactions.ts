@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Database } from "@phantomchain/core-interfaces";
-import { models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Database } from "@phantomcores/core-interfaces";
+import { models } from "@phantomcores/crypto";
 import * as schema from "../schemas/transactions";
 
 const config = app.getConfig();

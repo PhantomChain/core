@@ -1,7 +1,7 @@
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 import { UnchainedHandler } from "../../../src/processor/handlers";
 
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 import { blocks2to100 } from "../../../../core-test-utils/src/fixtures/testnet/blocks2to100";
 import { Blockchain } from "../../../src/blockchain";
 import { BlockProcessorResult } from "../../../src/processor";

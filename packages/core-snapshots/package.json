@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-snapshots",
+    "name": "@phantomcores/core-snapshots",
     "description": "Provides live local streamed snapshots functionality for PHANTOM Core",
     "version": "2.2.1",
     "contributors": [
@@ -32,10 +32,10 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
-        "@phantomchain/core-database-postgres": "^2.2.1",
-        "@phantomchain/core-interfaces": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
+        "@phantomcores/core-database-postgres": "^2.2.1",
+        "@phantomcores/core-interfaces": "^2.2.2",
+        "@phantomcores/crypto": "^2.2.1",
         "JSONStream": "^1.3.5",
         "bluebird": "^3.5.3",
         "cpy-cli": "^2.0.0",

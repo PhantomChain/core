@@ -1,8 +1,8 @@
 /* tslint:disable:max-line-length */
-import { app } from "@phantomchain/core-container";
-import { Database } from "@phantomchain/core-interfaces";
-import { bignumify } from "@phantomchain/core-utils";
-import { Bignum, constants, models, slots } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Database } from "@phantomcores/core-interfaces";
+import { bignumify } from "@phantomcores/core-utils";
+import { Bignum, constants, models, slots } from "@phantomcores/crypto";
 import dayjs from "dayjs-ext";
 import delay from "delay";
 import randomSeed from "random-seed";

@@ -1,4 +1,4 @@
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 import { asValue } from "awilix";
 import delay from "delay";
 import { blocks2to100 } from "../../../core-test-utils/src/fixtures/testnet/blocks2to100";

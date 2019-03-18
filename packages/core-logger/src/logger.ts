@@ -1,4 +1,4 @@
-import { Logger } from "@phantomchain/core-interfaces";
+import { Logger } from "@phantomcores/core-interfaces";
 
 export abstract class AbstractLogger implements Logger.ILogger {
     /**

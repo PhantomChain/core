@@ -1,4 +1,4 @@
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 import { IMonitor } from "../core-p2p";
 import { ITransactionPool } from "../core-transaction-pool";
 import { IStateStorage } from "./state-storage";

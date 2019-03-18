@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-event-emitter",
+    "name": "@phantomcores/core-event-emitter",
     "description": "Event Manager for Phantom Core",
     "version": "2.2.1",
     "contributors": [

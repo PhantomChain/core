@@ -1,7 +1,7 @@
-import { app } from "@phantomchain/core-container";
-import { Database, Logger } from "@phantomchain/core-interfaces";
-import { roundCalculator } from "@phantomchain/core-utils";
-import { Bignum, constants, crypto, formatSatoshi, isException, models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Database, Logger } from "@phantomcores/core-interfaces";
+import { roundCalculator } from "@phantomcores/core-utils";
+import { Bignum, constants, crypto, formatSatoshi, isException, models } from "@phantomcores/crypto";
 import pluralize from "pluralize";
 
 const { Wallet } = models;

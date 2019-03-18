@@ -1,4 +1,4 @@
-import { Container } from "@phantomchain/core-interfaces";
+import { Container } from "@phantomcores/core-interfaces";
 import { asValue } from "awilix";
 import { Blockchain } from "./blockchain";
 import { config } from "./config";

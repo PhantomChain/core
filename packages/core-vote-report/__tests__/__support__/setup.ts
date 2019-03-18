@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { setUpContainer } from "@phantomchain/core-test-utils/src/helpers/container";
+import { app } from "@phantomcores/core-container";
+import { setUpContainer } from "@phantomcores/core-test-utils/src/helpers/container";
 import { defaults } from "../../src/defaults";
 import { startServer } from "../../src/server";
 
@@ -8,7 +8,7 @@ jest.setTimeout(60000);
 let server;
 async function setUp() {
     await setUpContainer({
-        exit: "@phantomchain/core-blockchain",
+        exit: "@phantomcores/core-blockchain",
     });
 
     server = await startServer(defaults);

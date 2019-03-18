@@ -1,7 +1,7 @@
-import { Blockchain, Container, Database } from "@phantomchain/core-interfaces";
-import { generators } from "@phantomchain/core-test-utils";
-import { delegates, genesisBlock, wallets } from "@phantomchain/core-test-utils/src/fixtures/unitnet";
-import { crypto, models } from "@phantomchain/crypto";
+import { Blockchain, Container, Database } from "@phantomcores/core-interfaces";
+import { generators } from "@phantomcores/core-test-utils";
+import { delegates, genesisBlock, wallets } from "@phantomcores/core-test-utils/src/fixtures/unitnet";
+import { crypto, models } from "@phantomcores/crypto";
 import bip39 from "bip39";
 import { setUpFull, tearDownFull } from "./__support__/setup";
 

@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { SnapshotManager } from "@phantomchain/core-snapshots";
+import { app } from "@phantomcores/core-container";
+import { SnapshotManager } from "@phantomcores/core-snapshots";
 import { setUpLite } from "../../helpers/snapshot";
 import { BaseCommand } from "../command";
 
@@ -12,7 +12,7 @@ export class TruncateCommand extends BaseCommand {
         await setUpLite(flags);
 
         if (!app.has("snapshots")) {
-            this.error("The @phantomchain/core-snapshots plugin is not installed.");
+            this.error("The @phantomcores/core-snapshots plugin is not installed.");
         }
 
         await app.resolvePlugin<SnapshotManager>("snapshots").truncateChain();

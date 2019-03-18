@@ -1,4 +1,4 @@
-import { configManager, crypto } from "@phantomchain/crypto";
+import { configManager, crypto } from "@phantomcores/crypto";
 import { flags } from "@oclif/command";
 import bip38 from "bip38";
 import bip39 from "bip39";

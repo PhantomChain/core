@@ -1,4 +1,4 @@
-import { createServer, mountServer } from "@phantomchain/core-http-utils";
+import { createServer, mountServer } from "@phantomcores/core-http-utils";
 import { apolloServer } from "./apollo-server";
 
 export async function startServer(config) {

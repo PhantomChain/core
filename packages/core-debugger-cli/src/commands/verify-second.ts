@@ -1,4 +1,4 @@
-import { crypto, models } from "@phantomchain/crypto";
+import { crypto, models } from "@phantomcores/crypto";
 import { flags } from "@oclif/command";
 import { handleOutput } from "../utils";
 import { BaseCommand } from "./command";

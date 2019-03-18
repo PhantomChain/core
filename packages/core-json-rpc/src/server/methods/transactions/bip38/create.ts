@@ -1,4 +1,4 @@
-import { transactionBuilder } from "@phantomchain/crypto";
+import { transactionBuilder } from "@phantomcores/crypto";
 import Boom from "boom";
 import Joi from "joi";
 import { database } from "../../../services/database";

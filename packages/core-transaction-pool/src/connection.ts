@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Database, EventEmitter, Logger, TransactionPool as transactionPool } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Database, EventEmitter, Logger, TransactionPool as transactionPool } from "@phantomcores/core-interfaces";
 
 import assert from "assert";
 import dayjs from "dayjs-ext";

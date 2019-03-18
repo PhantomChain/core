@@ -1,6 +1,6 @@
 import "jest-extended";
 
-import { generators } from "@phantomchain/core-test-utils";
+import { generators } from "@phantomcores/core-test-utils";
 const { generateSecondSignature } = generators;
 
 import { SATOSHI } from "../../src/constants";

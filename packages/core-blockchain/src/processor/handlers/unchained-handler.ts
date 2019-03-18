@@ -1,7 +1,7 @@
 // tslint:disable:max-classes-per-file
 
-import { app } from "@phantomchain/core-container";
-import { models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { models } from "@phantomcores/crypto";
 import { Blockchain } from "../../blockchain";
 import { BlockProcessorResult } from "../block-processor";
 import { BlockHandler } from "./block-handler";

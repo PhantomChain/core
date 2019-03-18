@@ -201,7 +201,7 @@ success "Installed system updates!"
 
 heading "Installing Phantom Core..."
 
-yarn global add @phantomchain/core
+yarn global add @phantomcores/core
 echo 'export PATH=$(yarn global bin):$PATH' >> ~/.bashrc
 export PATH=$(yarn global bin):$PATH
 phantom config:publish

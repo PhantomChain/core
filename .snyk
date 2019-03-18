@@ -215,13 +215,13 @@ ignore:
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
   'npm:chownr:20180731':
-    - '@phantomchain/core > @phantomchain/core-transaction-pool-mem > better-sqlite3 > tar > chownr':
+    - '@phantomcores/core > @phantomcores/core-transaction-pool-mem > better-sqlite3 > tar > chownr':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
-    - '@phantomchain/core > @phantomchain/core-webhooks > sqlite3 > node-pre-gyp > tar > chownr':
+    - '@phantomcores/core > @phantomcores/core-webhooks > sqlite3 > node-pre-gyp > tar > chownr':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
-    - '@phantomchain/core > @phantomchain/core-json-rpc > @keyv/sqlite > sqlite3 > node-pre-gyp > tar > chownr':
+    - '@phantomcores/core > @phantomcores/core-json-rpc > @keyv/sqlite > sqlite3 > node-pre-gyp > tar > chownr':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
     - jest-mock-process > jest > jest-cli > jest-haste-map > sane > fsevents > node-pre-gyp > tar > chownr:
@@ -237,13 +237,13 @@ ignore:
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
   'npm:lodash:20180130':
-    - '@phantomchain/core > @phantomchain/core-database-postgres > sql > lodash':
+    - '@phantomcores/core > @phantomcores/core-database-postgres > sql > lodash':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
-    - '@phantomchain/core-snapshots > @phantomchain/core-database-postgres > sql > lodash':
+    - '@phantomcores/core-snapshots > @phantomcores/core-database-postgres > sql > lodash':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
-    - '@phantomchain/core > @phantomchain/core-json-rpc > @keyv/sqlite > @keyv/sql > sql > lodash':
+    - '@phantomcores/core > @phantomcores/core-json-rpc > @keyv/sqlite > @keyv/sql > sql > lodash':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
   'npm:mem:20180117':
@@ -257,13 +257,13 @@ ignore:
         reason: None given
         expires: '2018-12-11T05:03:38.315Z'
   'npm:sql:20180512':
-    - '@phantomchain/core > @phantomchain/core-database-postgres > sql':
+    - '@phantomcores/core > @phantomcores/core-database-postgres > sql':
         reason: None given
         expires: '2018-12-11T05:03:38.315Z'
-    - '@phantomchain/core-snapshots > @phantomchain/core-database-postgres > sql':
+    - '@phantomcores/core-snapshots > @phantomcores/core-database-postgres > sql':
         reason: None given
         expires: '2018-12-11T05:03:38.315Z'
-    - '@phantomchain/core > @phantomchain/core-json-rpc > @keyv/sqlite > @keyv/sql > sql':
+    - '@phantomcores/core > @phantomcores/core-json-rpc > @keyv/sqlite > @keyv/sql > sql':
         reason: None given
         expires: '2018-12-11T05:03:38.315Z'
 patch: {}

@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { SnapshotManager } from "@phantomchain/core-snapshots";
+import { app } from "@phantomcores/core-container";
+import { SnapshotManager } from "@phantomcores/core-snapshots";
 import { setUpLite } from "../utils";
 import { BaseCommand } from "./command";
 

@@ -1,4 +1,4 @@
-import { Blockchain, Container } from "@phantomchain/core-interfaces";
+import { Blockchain, Container } from "@phantomcores/core-interfaces";
 import { calculateFee, dynamicFeeMatcher } from "../src/dynamic-fee";
 import { transactions } from "./__fixtures__/transactions";
 import { setUpFull, tearDownFull } from "./__support__/setup";

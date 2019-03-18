@@ -1,8 +1,8 @@
 // tslint:disable:variable-name
 
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Logger } from "@phantomchain/core-interfaces";
-import { configManager, models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Logger } from "@phantomcores/core-interfaces";
+import { configManager, models } from "@phantomcores/crypto";
 import assert from "assert";
 import immutable from "immutable";
 import { config } from "./config";

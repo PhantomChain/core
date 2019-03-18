@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 
 jest.setTimeout(60000);
@@ -27,16 +27,16 @@ const options = {
 
 export const setUp = async () => {
     return await setUpContainer({
-        exit: "@phantomchain/core-blockchain",
-        exclude: ["@phantomchain/core-transaction-pool"],
+        exit: "@phantomcores/core-blockchain",
+        exclude: ["@phantomcores/core-transaction-pool"],
         network: "unitnet",
     });
 };
 
 export const setUpFull = async () => {
     await setUpContainer({
-        exit: "@phantomchain/core-transaction-pool",
-        exclude: ["@phantomchain/core-transaction-pool"],
+        exit: "@phantomcores/core-transaction-pool",
+        exclude: ["@phantomcores/core-transaction-pool"],
         network: "unitnet",
     });
 
@@ -44,13 +44,13 @@ export const setUpFull = async () => {
 
     // now registering the plugins that need to be registered after transaction pool
     // register p2p
-    await registerWithContainer(require("@phantomchain/core-p2p").plugin, {
+    await registerWithContainer(require("@phantomcores/core-p2p").plugin, {
         host: "0.0.0.0",
         port: 4000,
         minimumNetworkReach: 5,
         coldStart: 5,
     });
-    await registerWithContainer(require("@phantomchain/core-blockchain").plugin, {});
+    await registerWithContainer(require("@phantomcores/core-blockchain").plugin, {});
     return app;
 };
 
@@ -60,8 +60,8 @@ export const tearDown = async () => {
 
 export const tearDownFull = async () => {
     await require("../../src/plugin").plugin.deregister(app, options);
-    await require("@phantomchain/core-p2p").plugin.deregister(app, {});
-    await require("@phantomchain/core-blockchain").plugin.deregister(app, {});
+    await require("@phantomcores/core-p2p").plugin.deregister(app, {});
+    await require("@phantomcores/core-blockchain").plugin.deregister(app, {});
 
     await app.tearDown();
 };

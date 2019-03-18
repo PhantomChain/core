@@ -1,4 +1,4 @@
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 import { client } from "../client";
 import { storage } from "../storage";
 import { first, last } from "../utils";

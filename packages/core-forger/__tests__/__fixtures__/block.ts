@@ -1,4 +1,4 @@
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 
 export const sampleBlock = new models.Block({
     id: "4398082439836560423",

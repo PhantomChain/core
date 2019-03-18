@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 
 jest.setTimeout(60000);
@@ -13,7 +13,7 @@ export const setUp = async () => {
     process.env.CORE_GRAPHQL_ENABLED = "true";
 
     await setUpContainer({
-        exclude: ["@phantomchain/core-api", "@phantomchain/core-forger", "@phantomchain/core-graphql"],
+        exclude: ["@phantomcores/core-api", "@phantomcores/core-forger", "@phantomcores/core-graphql"],
     });
 
     const { plugin } = require("../../src");

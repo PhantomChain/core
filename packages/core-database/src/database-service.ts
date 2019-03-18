@@ -1,7 +1,7 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Database, EventEmitter, Logger } from "@phantomchain/core-interfaces";
-import { roundCalculator } from "@phantomchain/core-utils";
-import { Bignum, constants, crypto as phantomCrypto, models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Database, EventEmitter, Logger } from "@phantomcores/core-interfaces";
+import { roundCalculator } from "@phantomcores/core-utils";
+import { Bignum, constants, crypto as phantomCrypto, models } from "@phantomcores/crypto";
 import assert from "assert";
 import crypto from "crypto";
 import cloneDeep from "lodash/cloneDeep";

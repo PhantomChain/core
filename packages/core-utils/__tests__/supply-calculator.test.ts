@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import "jest-extended";
 import { calculate } from "../src/supply-calculator";
 

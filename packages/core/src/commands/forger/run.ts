@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -24,14 +24,14 @@ $ phantom forger:run --bip38="..." --password="..."
 
         await this.buildApplication(app, flags, {
             include: [
-                "@phantomchain/core-event-emitter",
-                "@phantomchain/core-config",
-                "@phantomchain/core-logger",
-                "@phantomchain/core-logger-winston",
-                "@phantomchain/core-forger",
+                "@phantomcores/core-event-emitter",
+                "@phantomcores/core-config",
+                "@phantomcores/core-logger",
+                "@phantomcores/core-logger-winston",
+                "@phantomcores/core-forger",
             ],
             options: {
-                "@phantomchain/core-forger": await this.buildBIP38(flags),
+                "@phantomcores/core-forger": await this.buildBIP38(flags),
             },
         });
     }

@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-database-postgres",
+    "name": "@phantomcores/core-database-postgres",
     "description": "PostgreSQL integration for Phantom Core",
     "version": "2.2.1",
     "contributors": [
@@ -33,11 +33,11 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
-        "@phantomchain/core-database": "^2.2.1",
-        "@phantomchain/core-interfaces": "^2.2.1",
-        "@phantomchain/core-utils": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
+        "@phantomcores/core-database": "^2.2.1",
+        "@phantomcores/core-interfaces": "^2.2.2",
+        "@phantomcores/core-utils": "^2.2.1",
+        "@phantomcores/crypto": "^2.2.1",
         "bluebird": "^3.5.3",
         "cpy-cli": "^2.0.0",
         "lodash.chunk": "^4.2.0",

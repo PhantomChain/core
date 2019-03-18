@@ -1,7 +1,7 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain } from "@phantomchain/core-interfaces";
-import { bignumify } from "@phantomchain/core-utils";
-import { crypto, models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain } from "@phantomcores/core-interfaces";
+import { bignumify } from "@phantomcores/core-utils";
+import { crypto, models } from "@phantomcores/crypto";
 
 export function transformTransactionLegacy(model) {
     const config = app.getConfig();

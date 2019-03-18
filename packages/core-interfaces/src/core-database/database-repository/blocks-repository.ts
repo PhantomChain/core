@@ -1,4 +1,4 @@
-import { Bignum } from "@phantomchain/crypto";
+import { Bignum } from "@phantomcores/crypto";
 import { IRepository } from "./repository";
 
 export interface IBlocksRepository extends IRepository {

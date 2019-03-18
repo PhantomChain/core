@@ -1,10 +1,10 @@
 /* tslint:disable:jsdoc-format max-line-length */
 
-import { app } from "@phantomchain/core-container";
-import { EventEmitter, Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { EventEmitter, Logger } from "@phantomcores/core-interfaces";
 
-import { roundCalculator } from "@phantomchain/core-utils";
-import { isException, models, slots } from "@phantomchain/crypto";
+import { roundCalculator } from "@phantomcores/core-utils";
+import { isException, models, slots } from "@phantomcores/crypto";
 
 import pluralize from "pluralize";
 import { config as localConfig } from "./config";

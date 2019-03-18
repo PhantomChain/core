@@ -1,7 +1,7 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Database } from "@phantomchain/core-interfaces";
-import { delegateCalculator, supplyCalculator } from "@phantomchain/core-utils";
-import { configManager } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Database } from "@phantomcores/core-interfaces";
+import { delegateCalculator, supplyCalculator } from "@phantomcores/core-utils";
+import { configManager } from "@phantomcores/crypto";
 import sumBy from "lodash/sumBy";
 
 export function handler(request, h) {

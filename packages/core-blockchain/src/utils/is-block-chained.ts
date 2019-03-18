@@ -1,4 +1,4 @@
-import { models, slots } from "@phantomchain/crypto";
+import { models, slots } from "@phantomcores/crypto";
 
 export const isBlockChained = (previousBlock: models.IBlock, nextBlock: models.IBlock): boolean => {
     const followsPrevious = nextBlock.data.previousBlock === previousBlock.data.id;

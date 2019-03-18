@@ -1,4 +1,4 @@
-import { slots } from "@phantomchain/crypto";
+import { slots } from "@phantomcores/crypto";
 import Boom from "boom";
 import Hapi from "hapi";
 import { Controller } from "../shared/controller";

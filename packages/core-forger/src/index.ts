@@ -1,4 +1,4 @@
-import { Container, Logger } from "@phantomchain/core-interfaces";
+import { Container, Logger } from "@phantomcores/core-interfaces";
 import pluralize from "pluralize";
 import { defaults } from "./defaults";
 import { ForgerManager } from "./manager";

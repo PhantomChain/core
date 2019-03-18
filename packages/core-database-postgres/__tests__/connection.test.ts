@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Database } from "@phantomchain/core-interfaces";
-import { models } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Database } from "@phantomcores/core-interfaces";
+import { models } from "@phantomcores/crypto";
 import genesisBlock from "../../core-test-utils/src/config/testnet/genesisBlock.json";
 import { setUp, tearDown } from "./__support__/setup";
 

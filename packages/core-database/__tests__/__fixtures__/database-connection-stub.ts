@@ -1,7 +1,7 @@
 // tslint:disable:no-empty
 
-import { Database } from "@phantomchain/core-interfaces";
-import { models } from "@phantomchain/crypto";
+import { Database } from "@phantomcores/core-interfaces";
+import { models } from "@phantomcores/crypto";
 
 export class DatabaseConnectionStub implements Database.IDatabaseConnection {
     public blocksRepository: Database.IBlocksRepository;

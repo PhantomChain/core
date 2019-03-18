@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Database, EventEmitter, Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Database, EventEmitter, Logger } from "@phantomcores/core-interfaces";
 import { client } from "../client";
 import { storage } from "../storage";
 

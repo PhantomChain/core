@@ -1,4 +1,4 @@
-import { crypto } from "@phantomchain/crypto";
+import { crypto } from "@phantomcores/crypto";
 import Joi from "joi";
 
 export const walletCreate = {

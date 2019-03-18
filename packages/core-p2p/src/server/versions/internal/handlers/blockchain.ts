@@ -1,5 +1,5 @@
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Logger } from "@phantomcores/core-interfaces";
 
 const logger = app.resolvePlugin<Logger.ILogger>("logger");
 

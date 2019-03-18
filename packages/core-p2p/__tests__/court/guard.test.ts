@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import dayjs from "dayjs-ext";
 import { offences } from "../../src/court/offences";
 import { defaults } from "../../src/defaults";

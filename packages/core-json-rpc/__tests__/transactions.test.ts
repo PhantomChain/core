@@ -1,8 +1,8 @@
 import "jest-extended";
 
-import { app } from "@phantomchain/core-container";
-import { Peer } from "@phantomchain/core-p2p/dist/peer";
-import { crypto } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Peer } from "@phantomcores/core-p2p/dist/peer";
+import { crypto } from "@phantomcores/crypto";
 import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 import { sendRequest } from "./__support__/request";

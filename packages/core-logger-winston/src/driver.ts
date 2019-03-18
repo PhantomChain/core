@@ -1,4 +1,4 @@
-import { AbstractLogger } from "@phantomchain/core-logger";
+import { AbstractLogger } from "@phantomcores/core-logger";
 import "colors";
 import isEmpty from "lodash/isEmpty";
 import { inspect } from "util";

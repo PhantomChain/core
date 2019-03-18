@@ -1,4 +1,4 @@
-import { constants } from "@phantomchain/crypto";
+import { constants } from "@phantomcores/crypto";
 import { MemPoolTransaction } from "../src/mem-pool-transaction";
 import { transactions } from "./__fixtures__/transactions";
 

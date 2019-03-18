@@ -1,6 +1,6 @@
 import "../../../src/transactions/types/delegate";
 
-import { constants } from "@phantomchain/crypto";
+import { constants } from "@phantomcores/crypto";
 const { TransactionTypes } = constants;
 
 describe(".toBeDelegateType", () => {

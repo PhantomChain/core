@@ -1,4 +1,4 @@
-import { configManager, crypto, HashAlgorithms } from "@phantomchain/crypto";
+import { configManager, crypto, HashAlgorithms } from "@phantomcores/crypto";
 import { database } from "../services/database";
 import { decryptWIF } from "./decrypt-wif";
 

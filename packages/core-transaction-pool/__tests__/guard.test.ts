@@ -1,6 +1,6 @@
-import { Container } from "@phantomchain/core-interfaces";
-import { generators } from "@phantomchain/core-test-utils";
-import { configManager, constants, crypto, models, slots } from "@phantomchain/crypto";
+import { Container } from "@phantomcores/core-interfaces";
+import { generators } from "@phantomcores/core-test-utils";
+import { configManager, constants, crypto, models, slots } from "@phantomcores/crypto";
 import bip39 from "bip39";
 import "jest-extended";
 import { delegates, genesisBlock, wallets, wallets2ndSig } from "../../core-test-utils/src/fixtures/unitnet";

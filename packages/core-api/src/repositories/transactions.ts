@@ -1,4 +1,4 @@
-import { constants, slots } from "@phantomchain/crypto";
+import { constants, slots } from "@phantomcores/crypto";
 import dayjs from "dayjs-ext";
 import partition from "lodash/partition";
 import snakeCase from "lodash/snakeCase";

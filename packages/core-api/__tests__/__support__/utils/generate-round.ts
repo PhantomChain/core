@@ -1,4 +1,4 @@
-import { bignumify } from "@phantomchain/core-utils";
+import { bignumify } from "@phantomcores/core-utils";
 
 export function generateRound(delegates, round) {
     return delegates.map(delegate => ({

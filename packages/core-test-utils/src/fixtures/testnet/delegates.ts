@@ -1,4 +1,4 @@
-import { client, crypto } from "@phantomchain/crypto";
+import { client, crypto } from "@phantomcores/crypto";
 
 /**
  * Get the testnet genesis delegates information

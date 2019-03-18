@@ -1,12 +1,12 @@
 {
-    "name": "@phantomchain/core-interfaces",
+    "name": "@phantomcores/core-interfaces",
     "description": "Interface types for essential Phantom core modules",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "contributors": [
-        "François-Xavier Thoorens <fx@phantom.org>",
-        "Kristjan Košič <kristjan@phantom.org>",
-        "Brian Faust <brian@phantom.org>",
-        "Alex Barnsley <alex@phantom.org>"
+        "François-Xavier Thoorens <fx@ark.io>",
+        "Kristjan Košič <kristjan@ark.io>",
+        "Brian Faust <brian@ark.io>",
+        "Alex Barnsley <alex@ark.io>"
     ],
     "license": "MIT",
     "main": "dist/index",
@@ -30,7 +30,7 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/crypto": "^2.2.1",
         "awilix": "^4.2.0",
         "eventemitter3": "^3.1.0"
     },

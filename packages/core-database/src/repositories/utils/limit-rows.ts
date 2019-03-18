@@ -1,4 +1,4 @@
-import { Database } from "@phantomchain/core-interfaces";
+import { Database } from "@phantomcores/core-interfaces";
 /**
  * Return some rows by an offset and a limit.
  */

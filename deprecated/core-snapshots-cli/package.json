@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-snapshots-cli",
+    "name": "@phantomcores/core-snapshots-cli",
     "description": "Provides live cli interface to the core-snapshots module for PHANTOM Core",
     "version": "2.2.0",
     "contributors": [
@@ -55,9 +55,9 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.0-beta.7",
-        "@phantomchain/core-interfaces": "^2.2.0-beta.7",
-        "@phantomchain/core-snapshots": "^2.2.0-beta.7",
+        "@phantomcores/core-container": "^2.2.0-beta.7",
+        "@phantomcores/core-interfaces": "^2.2.0-beta.7",
+        "@phantomcores/core-snapshots": "^2.2.0-beta.7",
         "@oclif/command": "^1.5.10",
         "@oclif/config": "^1.12.6",
         "@oclif/plugin-help": "^2.1.6",

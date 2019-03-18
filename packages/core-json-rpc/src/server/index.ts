@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { createServer, mountServer, plugins } from "@phantomchain/core-http-utils";
-import { Logger } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { createServer, mountServer, plugins } from "@phantomcores/core-http-utils";
+import { Logger } from "@phantomcores/core-interfaces";
 import { registerMethods } from "./methods";
 import { Processor } from "./services/processor";
 

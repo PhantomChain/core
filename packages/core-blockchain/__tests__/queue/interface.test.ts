@@ -1,4 +1,4 @@
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 import async from "async";
 import { asValue } from "awilix";
 import delay from "delay";

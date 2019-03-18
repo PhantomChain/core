@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-api",
+    "name": "@phantomcores/core-api",
     "description": "Public API for Phantom Core",
     "version": "2.2.1",
     "contributors": [
@@ -33,13 +33,13 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
-        "@phantomchain/core-http-utils": "^2.2.1",
-        "@phantomchain/core-interfaces": "^2.2.1",
-        "@phantomchain/core-transaction-pool": "^2.2.1",
-        "@phantomchain/core-utils": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
-        "@phantomchain/utils": "^0.2.4",
+        "@phantomcores/core-container": "^2.2.1",
+        "@phantomcores/core-http-utils": "^2.2.2",
+        "@phantomcores/core-interfaces": "^2.2.2",
+        "@phantomcores/core-transaction-pool": "^2.2.1",
+        "@phantomcores/core-utils": "^2.2.1",
+        "@phantomcores/crypto": "^2.2.1",
+        "@phantomcores/utils": "^0.2.4",
         "@faustbrian/hapi-version": "^0.2.11",
         "ajv": "^6.9.1",
         "boom": "^7.3.0",
@@ -55,7 +55,7 @@
         "lodash.snakecase": "^4.1.1"
     },
     "devDependencies": {
-        "@phantomchain/core-test-utils": "^2.2.1",
+        "@phantomcores/core-test-utils": "^2.2.1",
         "@types/boom": "^7.2.1",
         "@types/ip": "^1.1.0",
         "@types/joi": "^14.3.1",

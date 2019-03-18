@@ -1,4 +1,4 @@
-import { Container, Logger } from "@phantomchain/core-interfaces";
+import { Container, Logger } from "@phantomcores/core-interfaces";
 import { defaults } from "./defaults";
 import { Server } from "./server";
 

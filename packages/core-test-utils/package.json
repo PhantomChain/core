@@ -1,5 +1,5 @@
 {
-    "name": "@phantomchain/core-test-utils",
+    "name": "@phantomcores/core-test-utils",
     "description": "Test Utilities for Phantom Core",
     "version": "2.2.1",
     "contributors": [
@@ -34,10 +34,10 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@phantomchain/core-container": "^2.2.1",
-        "@phantomchain/core-interfaces": "^2.2.1",
-        "@phantomchain/core-jest-matchers": "^2.2.1",
-        "@phantomchain/crypto": "^2.2.1",
+        "@phantomcores/core-container": "^2.2.1",
+        "@phantomcores/core-interfaces": "^2.2.2",
+        "@phantomcores/core-jest-matchers": "^2.2.1",
+        "@phantomcores/crypto": "^2.2.1",
         "awilix": "^4.2.0",
         "bip39": "^2.5.0",
         "lodash.get": "^4.4.2",

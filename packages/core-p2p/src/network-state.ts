@@ -1,6 +1,6 @@
 /* tslint:disable:no-shadowed-variable member-ordering max-classes-per-file */
-import { app } from "@phantomchain/core-container";
-import { slots } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { slots } from "@phantomcores/crypto";
 import { config as localConfig } from "./config";
 import { Monitor } from "./monitor";
 import { Peer } from "./peer";

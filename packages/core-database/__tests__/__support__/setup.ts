@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import "@phantomchain/core-test-utils";
-import { setUpContainer } from "@phantomchain/core-test-utils/src/helpers/container";
+import { app } from "@phantomcores/core-container";
+import "@phantomcores/core-test-utils";
+import { setUpContainer } from "@phantomcores/core-test-utils/src/helpers/container";
 
 export const setUp = async () => {
     jest.setTimeout(60000);
@@ -8,11 +8,11 @@ export const setUp = async () => {
     process.env.CORE_SKIP_BLOCKCHAIN = "true";
 
     return await setUpContainer({
-        exit: "@phantomchain/core-blockchain",
+        exit: "@phantomcores/core-blockchain",
         exclude: [
-            "@phantomchain/core-p2p",
-            "@phantomchain/core-transaction-pool",
-            "@phantomchain/core-database-postgres",
+            "@phantomcores/core-p2p",
+            "@phantomcores/core-transaction-pool",
+            "@phantomcores/core-database-postgres",
         ],
     });
 };

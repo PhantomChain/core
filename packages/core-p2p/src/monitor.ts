@@ -1,8 +1,8 @@
 /* tslint:disable:max-line-length */
 
-import { app } from "@phantomchain/core-container";
-import { Blockchain, Database, EventEmitter, Logger, P2P } from "@phantomchain/core-interfaces";
-import { slots } from "@phantomchain/crypto";
+import { app } from "@phantomcores/core-container";
+import { Blockchain, Database, EventEmitter, Logger, P2P } from "@phantomcores/core-interfaces";
+import { slots } from "@phantomcores/crypto";
 import dayjs from "dayjs-ext";
 import delay from "delay";
 import fs from "fs";

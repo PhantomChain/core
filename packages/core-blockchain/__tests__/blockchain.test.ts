@@ -1,10 +1,10 @@
 /* tslint:disable:max-line-length */
-import "@phantomchain/core-test-utils";
+import "@phantomcores/core-test-utils";
 
-import { blocks101to155 } from "@phantomchain/core-test-utils/src/fixtures/testnet/blocks101to155";
-import { blocks2to100 } from "@phantomchain/core-test-utils/src/fixtures/testnet/blocks2to100";
-import { delegates } from "@phantomchain/core-test-utils/src/fixtures/testnet/delegates";
-import { Bignum, crypto, models, slots, sortTransactions, transactionBuilder } from "@phantomchain/crypto";
+import { blocks101to155 } from "@phantomcores/core-test-utils/src/fixtures/testnet/blocks101to155";
+import { blocks2to100 } from "@phantomcores/core-test-utils/src/fixtures/testnet/blocks2to100";
+import { delegates } from "@phantomcores/core-test-utils/src/fixtures/testnet/delegates";
+import { Bignum, crypto, models, slots, sortTransactions, transactionBuilder } from "@phantomcores/crypto";
 import { asValue } from "awilix";
 import { createHash } from "crypto";
 import delay from "delay";
@@ -31,7 +31,7 @@ describe("Blockchain", () => {
 
         // Create the genesis block after the setup has finished or else it uses a potentially
         // wrong network config.
-        genesisBlock = new Block(require("@phantomchain/core-test-utils/src/config/testnet/genesisBlock.json"));
+        genesisBlock = new Block(require("@phantomcores/core-test-utils/src/config/testnet/genesisBlock.json"));
 
         configManager = container.getConfig();
 

@@ -3,7 +3,7 @@ import { IRoundsRepository } from "./database-repository";
 import { ITransactionsRepository } from "./database-repository";
 import { IWalletsRepository } from "./database-repository";
 
-import { models } from "@phantomchain/crypto";
+import { models } from "@phantomcores/crypto";
 
 export interface IDatabaseConnection {
 

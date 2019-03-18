@@ -1,4 +1,4 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -37,11 +37,11 @@ $ phantom core:run --launchMode=seed
 
         await this.buildApplication(app, flags, {
             options: {
-                "@phantomchain/core-p2p": this.buildPeerOptions(flags),
-                "@phantomchain/core-blockchain": {
+                "@phantomcores/core-p2p": this.buildPeerOptions(flags),
+                "@phantomcores/core-blockchain": {
                     networkStart: flags.networkStart,
                 },
-                "@phantomchain/core-forger": await this.buildBIP38(flags),
+                "@phantomcores/core-forger": await this.buildBIP38(flags),
             },
         });
     }

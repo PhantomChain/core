@@ -1,6 +1,6 @@
 import "./__support__/mocks/core-container";
 
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import "jest-extended";
 import { NSect } from "../src/nsect";
 

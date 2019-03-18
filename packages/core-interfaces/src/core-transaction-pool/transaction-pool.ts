@@ -1,6 +1,6 @@
 import dayjs from "dayjs-ext";
 
-import { constants, models } from "@phantomchain/crypto";
+import { constants, models } from "@phantomcores/crypto";
 
 export interface AddTransactionResponseDTO {
     success: boolean;

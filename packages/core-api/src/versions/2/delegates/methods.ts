@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Database } from "@phantomchain/core-interfaces";
-import { orderBy } from "@phantomchain/utils";
+import { app } from "@phantomcores/core-container";
+import { Database } from "@phantomcores/core-interfaces";
+import { orderBy } from "@phantomcores/utils";
 import Boom from "boom";
 import { blocksRepository } from "../../../repositories";
 import { ServerCache } from "../../../services";

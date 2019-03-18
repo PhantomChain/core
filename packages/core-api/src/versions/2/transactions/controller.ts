@@ -1,11 +1,11 @@
-import { app } from "@phantomchain/core-container";
-import { P2P } from "@phantomchain/core-interfaces";
+import { app } from "@phantomcores/core-container";
+import { P2P } from "@phantomcores/core-interfaces";
 import Boom from "boom";
 import Hapi from "hapi";
 import { Controller } from "../shared/controller";
 
-import { TransactionGuard, TransactionPool } from "@phantomchain/core-transaction-pool";
-import { constants } from "@phantomchain/crypto";
+import { TransactionGuard, TransactionPool } from "@phantomcores/core-transaction-pool";
+import { constants } from "@phantomcores/crypto";
 
 export class TransactionsController extends Controller {
     private transactionPool = app.resolvePlugin<TransactionPool>("transactionPool");

@@ -1,12 +1,12 @@
-import { app } from "@phantomchain/core-container";
+import { app } from "@phantomcores/core-container";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 
 jest.setTimeout(60000);
 
 export const setUpFull = async () => {
     await setUpContainer({
-        exit: "@phantomchain/core-p2p",
-        exclude: ["@phantomchain/core-blockchain"],
+        exit: "@phantomcores/core-p2p",
+        exclude: ["@phantomcores/core-blockchain"],
     });
 
     const { plugin } = require("../../src/plugin");
@@ -24,8 +24,8 @@ export const tearDownFull = async () => {
 
 export const setUp = async () =>
     setUpContainer({
-        exit: "@phantomchain/core-p2p",
-        exclude: ["@phantomchain/core-blockchain"],
+        exit: "@phantomcores/core-p2p",
+        exclude: ["@phantomcores/core-blockchain"],
     });
 
 export const tearDown = async () => {

@@ -1,6 +1,6 @@
-import { app } from "@phantomchain/core-container";
-import { Logger } from "@phantomchain/core-interfaces";
-import { SnapshotManager } from "@phantomchain/core-snapshots";
+import { app } from "@phantomcores/core-container";
+import { Logger } from "@phantomcores/core-interfaces";
+import { SnapshotManager } from "@phantomcores/core-snapshots";
 import { flags } from "@oclif/command";
 import fs from "fs-extra";
 import { setUpLite } from "../utils";

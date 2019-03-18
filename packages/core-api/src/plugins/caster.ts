@@ -1,4 +1,4 @@
-import { bignumify } from "@phantomchain/core-utils";
+import { bignumify } from "@phantomcores/core-utils";
 import Hapi from "hapi";
 
 function isBoolean(value) {

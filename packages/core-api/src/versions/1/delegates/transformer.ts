@@ -1,4 +1,4 @@
-import { delegateCalculator } from "@phantomchain/core-utils";
+import { delegateCalculator } from "@phantomcores/core-utils";
 
 export function transformDelegateLegacy(model) {
     return {

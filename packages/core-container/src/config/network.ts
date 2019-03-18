@@ -1,4 +1,4 @@
-import { NetworkManager } from "@phantomchain/crypto";
+import { NetworkManager } from "@phantomcores/crypto";
 import expandHomeDir from "expand-home-dir";
 import Joi from "joi";
 import { resolve } from "path";
