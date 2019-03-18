@@ -1,30 +1,25 @@
 {
-  "minimumVersion": ">=0.1.5",
-  "minimumNetworkReach": 20,
-  "globalTimeout": 5000,
-  "coldStart": 600,
-  "whiteList": [],
-  "blackList": [],
-  "list": [
-    {
-      "ip": "95.183.52.99",
-      "port": 4002
-    },
-    {
-      "ip": "95.183.52.105",
-      "port": 4002
-    },
-    {
-      "ip": "95.183.52.91",
-      "port": 4002
-    },
-    {
-      "ip": "185.227.109.106",
-      "port": 4002
-    },
-    {
-      "ip": "103.102.46.215",
-      "port": 4002
-    }
-  ]
+    "list": [
+        {
+            "ip": "95.183.52.99",
+            "port": 4002
+        },
+        {
+            "ip": "95.183.52.105",
+            "port": 4002
+        },
+        {
+            "ip": "95.183.52.91",
+            "port": 4002
+        },
+        {
+            "ip": "185.227.109.106",
+            "port": 4002
+        },
+        {
+            "ip": "103.102.46.215",
+            "port": 4002
+        }
+    ],
+    "sources": ["https://raw.githubusercontent.com/PhantomChain/peers/master/mainnet.json"]
 }
