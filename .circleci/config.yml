@@ -32,16 +32,13 @@ jobs:
       - save_cache:
           key: 'core-node10-{{ checksum "checksum.txt" }}-1'
           paths:
-            - ./packages/.DS_Store/node_modules
             - ./packages/core/node_modules
             - ./packages/core-api/node_modules
             - ./packages/core-blockchain/node_modules
-            - ./packages/core-config/node_modules
             - ./packages/core-container/node_modules
             - ./packages/core-database/node_modules
             - ./packages/core-database-postgres/node_modules
             - ./packages/core-debugger-cli/node_modules
-            - ./packages/core-deployer/node_modules
             - ./packages/core-elasticsearch/node_modules
             - ./packages/core-error-tracker-bugsnag/node_modules
             - ./packages/core-error-tracker-sentry/node_modules
@@ -49,17 +46,16 @@ jobs:
             - ./packages/core-forger/node_modules
             - ./packages/core-graphql/node_modules
             - ./packages/core-http-utils/node_modules
+            - ./packages/core-interfaces/node_modules
             - ./packages/core-jest-matchers/node_modules
             - ./packages/core-json-rpc/node_modules
             - ./packages/core-logger/node_modules
             - ./packages/core-logger-winston/node_modules
             - ./packages/core-p2p/node_modules
             - ./packages/core-snapshots/node_modules
-            - ./packages/core-snapshots-cli/node_modules
             - ./packages/core-test-utils/node_modules
             - ./packages/core-tester-cli/node_modules
             - ./packages/core-transaction-pool/node_modules
-            - ./packages/core-transaction-pool-mem/node_modules
             - ./packages/core-utils/node_modules
             - ./packages/core-vote-report/node_modules
             - ./packages/core-webhooks/node_modules
@@ -72,14 +68,12 @@ jobs:
           name: Test
           command: >
             ./node_modules/.bin/cross-env PHANTOM_ENV=test
-            ./node_modules/.bin/jest ./packages/core-webhooks/
-            ./packages/core-transaction-pool-mem/ ./packages/core-test-utils/
-            ./packages/core-p2p/ ./packages/core-json-rpc/
-            ./packages/core-graphql/ ./packages/core-error-tracker-sentry/
-            ./packages/core-deployer/ ./packages/core-database/
-            ./packages/core-blockchain/ ./packages/core-http-utils/
-            --detectOpenHandles --runInBand --forceExit --ci --coverage | tee
-            test_output.txt
+            ./node_modules/.bin/jest ./packages/crypto/ ./packages/core-utils/
+            ./packages/core-test-utils/ ./packages/core-logger-winston/
+            ./packages/core-jest-matchers/ ./packages/core-graphql/
+            ./packages/core-error-tracker-sentry/ ./packages/core-debugger-cli/
+            ./packages/core-container/ ./packages/core/ --detectOpenHandles
+            --runInBand --forceExit --ci --coverage | tee test_output.txt
       - run:
           name: Last 1000 lines of test output
           when: on_fail
@@ -119,16 +113,13 @@ jobs:
       - save_cache:
           key: 'core-node10-{{ checksum "checksum.txt" }}-1'
           paths:
-            - ./packages/.DS_Store/node_modules
             - ./packages/core/node_modules
             - ./packages/core-api/node_modules
             - ./packages/core-blockchain/node_modules
-            - ./packages/core-config/node_modules
             - ./packages/core-container/node_modules
             - ./packages/core-database/node_modules
             - ./packages/core-database-postgres/node_modules
             - ./packages/core-debugger-cli/node_modules
-            - ./packages/core-deployer/node_modules
             - ./packages/core-elasticsearch/node_modules
             - ./packages/core-error-tracker-bugsnag/node_modules
             - ./packages/core-error-tracker-sentry/node_modules
@@ -136,17 +127,16 @@ jobs:
             - ./packages/core-forger/node_modules
             - ./packages/core-graphql/node_modules
             - ./packages/core-http-utils/node_modules
+            - ./packages/core-interfaces/node_modules
             - ./packages/core-jest-matchers/node_modules
             - ./packages/core-json-rpc/node_modules
             - ./packages/core-logger/node_modules
             - ./packages/core-logger-winston/node_modules
             - ./packages/core-p2p/node_modules
             - ./packages/core-snapshots/node_modules
-            - ./packages/core-snapshots-cli/node_modules
             - ./packages/core-test-utils/node_modules
             - ./packages/core-tester-cli/node_modules
             - ./packages/core-transaction-pool/node_modules
-            - ./packages/core-transaction-pool-mem/node_modules
             - ./packages/core-utils/node_modules
             - ./packages/core-vote-report/node_modules
             - ./packages/core-webhooks/node_modules
@@ -159,13 +149,12 @@ jobs:
           name: Test
           command: >
             ./node_modules/.bin/cross-env PHANTOM_ENV=test
-            ./node_modules/.bin/jest ./packages/crypto/ ./packages/core-utils/
-            ./packages/core-tester-cli/ ./packages/core-snapshots/
-            ./packages/core-logger/ ./packages/core/
+            ./node_modules/.bin/jest ./packages/core-vote-report/
+            ./packages/core-tester-cli/ ./packages/core-p2p/
+            ./packages/core-json-rpc/ ./packages/core-http-utils/
             ./packages/core-event-emitter/ ./packages/core-elasticsearch/
-            ./packages/core-database-postgres/ ./packages/core-config/
-            ./packages/.DS_Store/ --detectOpenHandles --runInBand --forceExit
-            --ci --coverage | tee test_output.txt
+            ./packages/core-database/ ./packages/core-api/ --detectOpenHandles
+            --runInBand --forceExit --ci --coverage | tee test_output.txt
       - run:
           name: Last 1000 lines of test output
           when: on_fail
@@ -205,16 +194,13 @@ jobs:
       - save_cache:
           key: 'core-node10-{{ checksum "checksum.txt" }}-1'
           paths:
-            - ./packages/.DS_Store/node_modules
             - ./packages/core/node_modules
             - ./packages/core-api/node_modules
             - ./packages/core-blockchain/node_modules
-            - ./packages/core-config/node_modules
             - ./packages/core-container/node_modules
             - ./packages/core-database/node_modules
             - ./packages/core-database-postgres/node_modules
             - ./packages/core-debugger-cli/node_modules
-            - ./packages/core-deployer/node_modules
             - ./packages/core-elasticsearch/node_modules
             - ./packages/core-error-tracker-bugsnag/node_modules
             - ./packages/core-error-tracker-sentry/node_modules
@@ -222,17 +208,16 @@ jobs:
             - ./packages/core-forger/node_modules
             - ./packages/core-graphql/node_modules
             - ./packages/core-http-utils/node_modules
+            - ./packages/core-interfaces/node_modules
             - ./packages/core-jest-matchers/node_modules
             - ./packages/core-json-rpc/node_modules
             - ./packages/core-logger/node_modules
             - ./packages/core-logger-winston/node_modules
             - ./packages/core-p2p/node_modules
             - ./packages/core-snapshots/node_modules
-            - ./packages/core-snapshots-cli/node_modules
             - ./packages/core-test-utils/node_modules
             - ./packages/core-tester-cli/node_modules
             - ./packages/core-transaction-pool/node_modules
-            - ./packages/core-transaction-pool-mem/node_modules
             - ./packages/core-utils/node_modules
             - ./packages/core-vote-report/node_modules
             - ./packages/core-webhooks/node_modules
@@ -245,13 +230,13 @@ jobs:
           name: Test
           command: >
             ./node_modules/.bin/cross-env PHANTOM_ENV=test
-            ./node_modules/.bin/jest ./packages/core-vote-report/
-            ./packages/core-transaction-pool/ ./packages/core-snapshots-cli/
-            ./packages/core-logger-winston/ ./packages/core-jest-matchers/
+            ./node_modules/.bin/jest ./packages/core-webhooks/
+            ./packages/core-transaction-pool/ ./packages/core-snapshots/
+            ./packages/core-logger/ ./packages/core-interfaces/
             ./packages/core-forger/ ./packages/core-error-tracker-bugsnag/
-            ./packages/core-debugger-cli/ ./packages/core-container/
-            ./packages/core-api/ --detectOpenHandles --runInBand --forceExit
-            --ci --coverage | tee test_output.txt
+            ./packages/core-database-postgres/ ./packages/core-blockchain/
+            --detectOpenHandles --runInBand --forceExit --ci --coverage | tee
+            test_output.txt
       - run:
           name: Last 1000 lines of test output
           when: on_fail

@@ -1,41 +1,41 @@
 {
-    "name": "@phantomcores/core-error-tracker-bugsnag",
-    "description": "Bugsnag error tracker integration for Phantom Core.",
-    "version": "2.2.1",
-    "contributors": [
-        "Brian Faust <brian@phantom.org>"
-    ],
-    "license": "MIT",
-    "main": "dist/index.js",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "publish:alpha": "npm publish --tag alpha",
-        "publish:beta": "npm publish --tag beta",
-        "publish:rc": "npm publish --tag rc",
-        "publish:latest": "npm publish --tag latest",
-        "prepublishOnly": "yarn build",
-        "pretest": "yarn lint && yarn build",
-        "compile": "../../node_modules/typescript/bin/tsc",
-        "build": "yarn clean && yarn compile",
-        "build:watch": "yarn clean && yarn compile -w",
-        "clean": "del dist",
-        "docs": "../../node_modules/typedoc/bin/typedoc src --out docs",
-        "lint": "../../node_modules/tslint/bin/tslint -c ../../tslint.json 'src/**/*.ts' '__tests__/**/*.ts' --fix",
-        "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
-    },
-    "dependencies": {
-        "@phantomcores/core-container": "^2.2.1",
-        "@bugsnag/js": "^5.2.0"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "engines": {
-        "node": ">=10.x"
-    },
-    "jest": {
-        "preset": "../../jest-preset.json"
-    }
+  "name": "@phantomcores/core-error-tracker-bugsnag",
+  "description": "Bugsnag error tracker integration for Phantom Core.",
+  "version": "2.2.1",
+  "contributors": [
+    "Brian Faust <brian@phantom.org>"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "publish:alpha": "npm publish --tag alpha",
+    "publish:beta": "npm publish --tag beta",
+    "publish:rc": "npm publish --tag rc",
+    "publish:latest": "npm publish --tag latest",
+    "prepublishOnly": "yarn build",
+    "pretest": "yarn lint && yarn build",
+    "compile": "../../node_modules/typescript/bin/tsc",
+    "build": "yarn clean && yarn compile",
+    "build:watch": "yarn clean && yarn compile -w",
+    "clean": "del dist",
+    "docs": "../../node_modules/typedoc/bin/typedoc src --out docs",
+    "lint": "../../node_modules/tslint/bin/tslint -c ../../tslint.json 'src/**/*.ts' '__tests__/**/*.ts' --fix",
+    "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
+  },
+  "dependencies": {
+    "@phantomcores/core-container": "^2.2.2",
+    "@bugsnag/js": "^5.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.x"
+  },
+  "jest": {
+    "preset": "../../jest-preset.json"
+  }
 }
