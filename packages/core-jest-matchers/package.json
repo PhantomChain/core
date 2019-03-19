@@ -35,7 +35,7 @@
     "dependencies": {
         "@phantomcores/core-container": "^2.2.1",
         "@phantomcores/crypto": "^2.2.1",
-        "@phantomcores/utils": "^0.2.4",
+        "@phantomcores/utils": "^0.3.0",
         "bip39": "^2.5.0",
         "lodash.get": "^4.4.2",
         "lodash.isequal": "^4.5.0",
