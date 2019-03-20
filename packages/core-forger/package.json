@@ -3,9 +3,9 @@
   "description": "Forger for Phantom Core",
   "version": "2.2.1",
   "contributors": [
-    "François-Xavier Thoorens <fx@phantom.org>",
-    "Kristjan Košič <kristjan@phantom.org>",
-    "Brian Faust <brian@phantom.org>"
+    "François-Xavier Thoorens <fx@ark.io>",
+    "Kristjan Košič <kristjan@ark.io>",
+    "Brian Faust <brian@ark.io>"
   ],
   "license": "MIT",
   "main": "dist/index.js",

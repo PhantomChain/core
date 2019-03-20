@@ -3,7 +3,7 @@
   "description": "Provides live local streamed snapshots functionality for PHANTOM Core",
   "version": "2.2.1",
   "contributors": [
-    "Kristjan Košič <chris@phantom.org>"
+    "Kristjan Košič <chris@ark.io>"
   ],
   "license": "MIT",
   "main": "dist/index",
