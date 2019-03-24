@@ -233,7 +233,5 @@
       "port": 4002
     }
   ],
-  "sources": [
-    "https://raw.githubusercontent.com/PhantomChain/core/typescript/packages/core/bin/config/mainnet/peers.json"
-  ]
+  "sources": ["https://raw.githubusercontent.com/PhantomChain/core/typescript/packages/core/bin/config/mainnet/peers.json"]
 }
