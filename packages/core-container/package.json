@@ -37,7 +37,7 @@
     "awilix": "^4.2.0",
     "axios": "^0.18.0",
     "delay": "^4.1.0",
-    "env-paths": "^2.0.0",
+    "env-paths": "~2.0.0",
     "envfile": "^3.0.0",
     "expand-home-dir": "^0.0.3",
     "fs-extra": "^7.0.1",
