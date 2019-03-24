@@ -195,8 +195,6 @@ export class Guard {
      */
     public isValidNetwork(peer) {
         const nethash = peer.nethash || (peer.headers && peer.headers.nethash);
-        let testHash = config.get("network.nethash");
-        console.log(testHash)
         return nethash === config.get("network.nethash");
     }
 

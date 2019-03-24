@@ -194,14 +194,7 @@ export class Peer implements P2P.IPeer {
         }
 
         const body = await this.__get("/peer/status", delay);
-        console.log(this.ip)
-        console.log(this.port)
-        console.log(this.__get)
-
         if (!body) {
-            console.log(this.ip)
-            console.log(this.port)
-            console.log(this.__get)
             throw new Error(`Peer ${this.ip}: could not get status response`);
         }
 
