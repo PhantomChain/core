@@ -688,7 +688,7 @@ export class Monitor implements P2P.IMonitor {
             app.forceExit("No seed peers defined in peers.json :interrobang:");
         }
 
-        let peers = peerList.map(peer => {
+        let peers = peerList.list.map(peer => {
             peer.version = app.getVersion();
             return peer;
         });
