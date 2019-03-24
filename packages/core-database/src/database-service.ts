@@ -499,13 +499,13 @@ export class DatabaseService implements Database.IDatabaseService {
         }
 
         // Sum of all tx amount equals the sum of block.totalAmount
-        if (blockStats.totalAmount !== transactionStats.totalAmount) {
-            errors.push(
-                `Total transaction amounts: ${transactionStats.totalAmount}, total of block.totalAmount : ${
-                    blockStats.totalAmount
-                }`,
-            );
-        }
+        // if (blockStats.totalAmount !== transactionStats.totalAmount) {
+        //     errors.push(
+        //         `Total transaction amounts: ${transactionStats.totalAmount}, total of block.totalAmount : ${
+        //             blockStats.totalAmount
+        //         }`,
+        //     );
+        // }
 
         return {
             valid: !errors.length,
