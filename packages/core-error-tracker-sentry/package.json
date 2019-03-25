@@ -1,9 +1,9 @@
 {
   "name": "@phantomcores/core-error-tracker-sentry",
   "description": "Sentry error tracker integration for Phantom Core.",
-  "version": "2.2.1",
+  "version": "2.2.4",
   "contributors": [
-    "Brian Faust <brian@phantom.org>"
+    "Brian Faust <brian@ark.io>"
   ],
   "license": "MIT",
   "main": "dist/index.js",
@@ -26,7 +26,7 @@
     "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
   },
   "dependencies": {
-    "@phantomcores/core-container": "^2.2.2",
+    "@phantomcores/core-container": "^2.2.4",
     "@sentry/node": "^4.5.4"
   },
   "publishConfig": {

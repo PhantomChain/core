@@ -1,7 +1,7 @@
 {
   "name": "@phantomcores/core-snapshots",
   "description": "Provides live local streamed snapshots functionality for PHANTOM Core",
-  "version": "2.2.1",
+  "version": "2.2.4",
   "contributors": [
     "Kristjan Košič <chris@ark.io>"
   ],
@@ -32,10 +32,10 @@
     "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
   },
   "dependencies": {
-    "@phantomcores/core-container": "^2.2.2",
-    "@phantomcores/core-database-postgres": "^2.2.1",
-    "@phantomcores/core-interfaces": "^2.2.3",
-    "@phantomcores/crypto": "^2.2.2",
+    "@phantomcores/core-container": "^2.2.4",
+    "@phantomcores/core-database-postgres": "^2.2.4",
+    "@phantomcores/core-interfaces": "^2.2.4",
+    "@phantomcores/crypto": "^2.2.4",
     "JSONStream": "^1.3.5",
     "bluebird": "^3.5.3",
     "cpy-cli": "^2.0.0",

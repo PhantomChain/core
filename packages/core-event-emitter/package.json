@@ -1,7 +1,7 @@
 {
   "name": "@phantomcores/core-event-emitter",
   "description": "Event Manager for Phantom Core",
-  "version": "2.2.1",
+  "version": "2.2.4",
   "contributors": [
     "Brian Faust <brian@ark.io>"
   ],

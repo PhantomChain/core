@@ -1,9 +1,9 @@
 {
   "name": "@phantomcores/core-debugger-cli",
   "description": "Debugger CLI for Phantom Core",
-  "version": "2.2.1",
+  "version": "2.2.4",
   "contributors": [
-    "Brian Faust <brian@phantom.org>"
+    "Brian Faust <brian@ark.io>"
   ],
   "license": "MIT",
   "main": "dist/index.js",
@@ -39,7 +39,7 @@
     "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
   },
   "dependencies": {
-    "@phantomcores/crypto": "^2.2.2",
+    "@phantomcores/crypto": "^2.2.4",
     "@oclif/command": "^1.5.10",
     "@oclif/config": "^1.12.6",
     "@oclif/plugin-help": "^2.1.6",

@@ -1,7 +1,7 @@
 {
   "name": "@phantomcores/core-test-utils",
   "description": "Test Utilities for Phantom Core",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "contributors": [
     "Brian Faust <brian@ark.io>",
     "Erwann Gentric <erwann@ark.io>",
@@ -34,10 +34,10 @@
     "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
   },
   "dependencies": {
-    "@phantomcores/core-container": "^2.2.2",
-    "@phantomcores/core-interfaces": "^2.2.3",
-    "@phantomcores/core-jest-matchers": "^2.2.3",
-    "@phantomcores/crypto": "^2.2.2",
+    "@phantomcores/core-container": "^2.2.4",
+    "@phantomcores/core-interfaces": "^2.2.4",
+    "@phantomcores/core-jest-matchers": "^2.2.4",
+    "@phantomcores/crypto": "^2.2.4",
     "awilix": "^4.2.0",
     "bip39": "^2.5.0",
     "lodash.get": "^4.4.2",

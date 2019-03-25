@@ -1,9 +1,9 @@
 {
   "name": "@phantomcores/core-vote-report",
   "description": "Vote Report for Phantom Core",
-  "version": "2.2.1",
+  "version": "2.2.4",
   "contributors": [
-    "Brian Faust <brian@phantom.org>"
+    "Brian Faust <brian@ark.io>"
   ],
   "license": "MIT",
   "main": "dist/index.js",
@@ -31,10 +31,10 @@
     "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
   },
   "dependencies": {
-    "@phantomcores/core-container": "^2.2.2",
-    "@phantomcores/core-http-utils": "^2.2.3",
-    "@phantomcores/core-utils": "^2.2.2",
-    "@phantomcores/crypto": "^2.2.2",
+    "@phantomcores/core-container": "^2.2.4",
+    "@phantomcores/core-http-utils": "^2.2.4",
+    "@phantomcores/core-utils": "^2.2.4",
+    "@phantomcores/crypto": "^2.2.4",
     "handlebars": "^4.1.0",
     "lodash.sumby": "^4.6.0"
   },
