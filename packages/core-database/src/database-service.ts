@@ -1,6 +1,6 @@
 import { app } from "@phantomcores/core-container";
 import { Blockchain, Database, EventEmitter, Logger } from "@phantomcores/core-interfaces";
-import { roundCalculator } from "@phantomcores/core-utils";
+import { roundCalculator, bignumify } from "@phantomcores/core-utils";
 import { Bignum, constants, crypto as phantomCrypto, models } from "@phantomcores/crypto";
 import assert from "assert";
 import crypto from "crypto";
@@ -499,13 +499,13 @@ export class DatabaseService implements Database.IDatabaseService {
         }
 
         // Sum of all tx amount equals the sum of block.totalAmount
-        // if (blockStats.totalAmount !== transactionStats.totalAmount) {
-        //     errors.push(
-        //         `Total transaction amounts: ${transactionStats.totalAmount}, total of block.totalAmount : ${
-        //             blockStats.totalAmount
-        //         }`,
-        //     );
-        // }
+        if (bignumify(blockStats.totalAmount).isEqualTo(bignumify(transactionStats.totalAmount))) {
+            errors.push(
+                `Total transaction amounts: ${transactionStats.totalAmount}, total of block.totalAmount : ${
+                    blockStats.totalAmount
+                }`,
+            );
+        }
 
         return {
             valid: !errors.length,
